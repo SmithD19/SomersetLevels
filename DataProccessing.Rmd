@@ -1,0 +1,107 @@
+---
+title: "Data Proccessing"
+output: html_notebook
+author: Daniel Smith
+date: June 2nd 2020
+editor_options: 
+  chunk_output_type: console
+---
+
+
+Packages
+```{r}
+library(tidyverse)
+library(readxl)
+library(janitor)
+```
+
+Read in the data
+```{r}
+dip <- read_xlsx("Data/RawDipData.xlsx", na = c("NA", "nd"))
+cov <- read_xlsx("Data/RawCovariateData.xlsx", na = c("NA", "nd"))
+```
+
+Join the data frames together and clean the names of variables
+```{r}
+data <- left_join(dip, cov) %>% clean_names() %>% remove_empty("cols")
+```
+
+Abundance variables mosquitoes
+```{r}
+mosquitoes <- data %>% select(totals_n_larvae:totals_n_oc_caspius) %>% colnames()
+```
+
+Abundance variables predators
+```{r}
+predators <- data %>% select(fish:gammarus) %>% colnames()
+```
+
+Plant Cover variables
+```{r}
+plantnames <- data %>% select(106:543) %>% colnames()
+```
+
+Structural variables
+```{r}
+structural <-
+  data %>% 
+  select(rhyne_dry,
+         rhyne_cleared,
+         average_width_m,
+         av_depth_centre_cm,
+         av_depth_proximal_edge_cm, 
+         waterboard_water_level_below_land_m, 
+         percentage_water_shaded) %>% 
+  colnames()
+```
+
+Site and season variables
+```{r}
+site <- data %>% select(site, plot, plot_id, season, year, dip_point)
+```
+
+Locational variables
+```{r}
+xy <- data %>% select(new_averaged_gps_readings_st, new_averaged_gps_readings_eastings, new_averaged_gps_readings_northings)
+```
+
+Mutate the variable categories into the right formats
+```{r}
+clean <- data %>% 
+  # Abundance variables are count
+  mutate_at(.vars = vars(mosquitoes, predators), as.integer) %>% 
+  # Structural variables are numeric
+  mutate_at(.vars = vars(structural), parse_number) # parse_number() selects the first number in a string then discards the rest
+  # Site and seasonal variables should be factoral
+```
+
+
+Ellenberg Numbers
+
+E = Ellenberg score for each species
+c = cover value for each species
+n = number of species having Ellenberg scores in the quadrat
+Cover-weighted score = Sum (E. c)/ Sum (c)
+Unweighted scores = Sum (E) /n
+```{r}
+# What plant species do we actually have?
+plantnames
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
