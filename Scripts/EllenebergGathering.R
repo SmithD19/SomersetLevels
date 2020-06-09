@@ -127,30 +127,23 @@ specieslist2 <- data3$Coalesced2Accepted %>% na.omit %>% discard((.) == "") %>% 
 # Ellenbergs for species list 2
 trait2df <- specieslist2 %>% searchtr8() %>% bindtr8(colname = "Coalesced2")
 
-
-### STOP HERE DEBUG AFTER
-
-stop()
-
 # Join these to the master DF?
 data4 <- data3 %>% full_join(trait1df)
-data5<- data3 %>% full_join(trait2df)
+data5 <- data3 %>% full_join(trait2df)
 
-data6 <- bind_cols(data4, data5) %>% mutate_all(as.character)
+data6 <- bind_rows(data4, data5) %>% mutate_all(as.character)
 
-ellenbergmatching <- data6 %>% mutate(ell_Light = coalesce(ell_light_uk, ell_light_uk1),
-                 ell_Moist = coalesce(ell_moist_uk, ell_moist_uk1),
-                 ell_pH = coalesce(ell_pH_uk, ell_pH_uk1),
-                 ell_Nitro = coalesce(ell_N, ell_N1),
-                 ell_Salt = coalesce(ell_S, ell_S1)) %>% 
-  select(VariableName, NameProvided,
-         ell_Light,
-         ell_Moist,
-         ell_pH,
-         ell_Nitro,
-         ell_Salt)
+ellenbergmatching <- data6 %>% select(-VariableName) %>% distinct()
 
-final <- plantnames %>% left_join(ellenbergmatching)
+final <- plantnames %>% 
+  left_join(ellenbergmatching) %>% 
+  select(-VariableName) %>% 
+  distinct() %>% 
+  mutate_at(ellenberguk, parse_number)
+
+
+final2 <- final %>% group_by_if(is.character) %>% 
+  summarise_if(is.numeric, sum)
 
 ################ !!!! FOR SOME REASON !!!! ####################
 # traits arent gathered properly when supplied with a list of traits.
@@ -163,5 +156,13 @@ length(specieslisttemp)
 
 testtr8 <- lapply(specieslisttemp, tr8, ellenberguk)
 
+testtr8 %>% map(extract_traits) %>% map(rownames_to_column) %>% bind_rows()
 
-  testtr8 %>% map(extract_traits) %>% map(rownames_to_column) %>% bind_rows()
+
+
+
+
+
+
+
+
