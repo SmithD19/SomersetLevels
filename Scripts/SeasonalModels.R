@@ -142,6 +142,7 @@ for (i in 1:3) {
   )
 }
 
+names(models) <- c("Spring", "Summer", "Autumn")
 
 # Testing Params ----------------------------------------------------------
 
@@ -149,9 +150,9 @@ for (i in 1:3) {
 ifelse(!dir.exists(file.path("Models", "Seasonal_Models")), dir.create(file.path("Models", "Seasonal_Models")), FALSE)
 
 # Test run or not?
-test.run = T
+test.run = F
 
-nChains = 2
+nChains = 4
 
 if (test.run) {
   # with this option mcmc runs fast for checking
@@ -169,13 +170,12 @@ if (test.run) {
 }
 
 # Run models in loop
-output <- list()
 
 for (i in seq_along(models)) {
   # Timings
   ptm = proc.time()
   
-  output[[i]] = sampleMcmc(
+  output = sampleMcmc(
     models[[i]],
     thin = thin,
     samples = samples,
@@ -191,7 +191,7 @@ for (i in seq_along(models)) {
   # Filename Saving
   filename = file.path("Models", "Seasonal_Models", paste0(names(models)[[i]], ".RData"))
   # Save file
-  save(m, file = filename, computationtime)
+  save(output, file = filename, computationtime)
 }
 
 
