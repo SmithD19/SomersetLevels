@@ -71,7 +71,7 @@ for (i in seq_along(model_list)) {
     mbeta = post$mean
     betaP = post$support
     # Support level to plot
-    # Specify inside or outside?
+    # Specify inside or outside loop?
     supportLevel = 0.95
     # Matrix to plot 
     toPlot = 2 * betaP - 1
@@ -146,7 +146,7 @@ for (i in seq_along(model_list)) {
       ggcorrplot(
         toplotsite,
         method = "square",
-        typ = "lower",
+        typ = "full",
         title = paste0(
           "Site Level Residual Correlations ",
           supportLevel[[j]],
@@ -198,7 +198,7 @@ for (i in seq_along(model_list)) {
       ggcorrplot(
         toplotrhyne,
         method = "square",
-        typ = "lower",
+        typ = "full",
         title = paste0(
           "Rhyne Level Residual Correlations ",
           supportLevel[[j]],

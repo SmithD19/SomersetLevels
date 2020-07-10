@@ -1,0 +1,445 @@
+"","NameProvided","VariableName","CleanName.x","CleanName.y","light","moisture","ph","nitrogen","salt"
+"1","Lemnaceae","Proximal_cover_Duckweed_[%]","Duckweed","Duckweed",7,12,7,5,0
+"2","Lemnaceae","Proximal_height_Duckweed_[cm]","Duckweed","Duckweed",7,12,7,5,0
+"3","Lemnaceae","Central_cover_Duckweed_[%]","Duckweed","Duckweed",7,12,7,5,0
+"4","Lemnaceae","Central_height_Duckweed_[cm]","Duckweed","Duckweed",7,12,7,5,0
+"5","Lemnaceae","Distal_cover_Duckweed_[%]","Duckweed","Duckweed",7,12,7,5,0
+"6","Lemnaceae","Distal_height_Duckweed_[cm]","Duckweed","Duckweed",7,12,7,5,0
+"7","Lemna triscula","Proximal_cover_Ivy-leaved duckweed_[%]","Ivyleaved duckweed","Ivyleaved duckweed",7,12,7,5,0
+"8","Lemna triscula","Proximal_height_Ivy-leaved duckweed_[cm]","Ivyleaved duckweed","Ivyleaved duckweed",7,12,7,5,0
+"9","Lemna triscula","Central_cover_Ivy-leaved duckweed_[%]","Ivyleaved duckweed","Ivyleaved duckweed",7,12,7,5,0
+"10","Lemna triscula","Central_height_Ivy-leaved duckweed_[cm]","Ivyleaved duckweed","Ivyleaved duckweed",7,12,7,5,0
+"11","Lemna triscula","Distal_cover_Ivy-leaved duckweed_[%]","Ivyleaved duckweed","Ivyleaved duckweed",7,12,7,5,0
+"12","Lemna triscula","Distal_height_Ivy-leaved duckweed_[cm]","Ivyleaved duckweed","Ivyleaved duckweed",7,12,7,5,0
+"13","Hydrocharis","Proximal_cover_Frog bit_[%]","Frog bit","Frog bit",7,11,7,7,0
+"14","Hydrocharis","Proximal_height_Frog bit_[cm]","Frog bit","Frog bit",7,11,7,7,0
+"15","Hydrocharis","Central_cover_Frog bit_[%]","Frog bit","Frog bit",7,11,7,7,0
+"16","Hydrocharis","Central_height_Frog bit_[cm]","Frog bit","Frog bit",7,11,7,7,0
+"17","Hydrocharis","Distal_cover_Frog bit_[%]","Frog bit","Frog bit",7,11,7,7,0
+"18","Hydrocharis","Distal_height_Frog bit_[cm]","Frog bit","Frog bit",7,11,7,7,0
+"19","Water fern","Proximal_cover_Azolla_[%]","Azolla","Azolla",7,11,8,8,0
+"20","Water fern","Proximal_height_Azolla_[cm]","Azolla","Azolla",7,11,8,8,0
+"21","Water fern","Central_cover_Azolla_[%]","Azolla","Azolla",7,11,8,8,0
+"22","Water fern","Central_height_Azolla_[cm]","Azolla","Azolla",7,11,8,8,0
+"23","Water fern","Distal_cover_Azolla_[%]","Azolla","Azolla",7,11,8,8,0
+"24","Water fern","Distal_height_Azolla_[cm]","Azolla","Azolla",7,11,8,8,0
+"25","Charophyte","Proximal_cover_Blanket weed_[%]","Blanket weed","Blanket weed",NA,NA,NA,NA,NA
+"26","Charophyte","Proximal_height_Blanket weed_[cm]","Blanket weed","Blanket weed",NA,NA,NA,NA,NA
+"27","Charophyte","Central_cover_Blanket weed_[%]","Blanket weed","Blanket weed",NA,NA,NA,NA,NA
+"28","Charophyte","Central_height_Blanket weed_[cm]","Blanket weed","Blanket weed",NA,NA,NA,NA,NA
+"29","Charophyte","Distal_cover_Blanket weed_[%]","Blanket weed","Blanket weed",NA,NA,NA,NA,NA
+"30","Charophyte","Distal_height_Blanket weed_[cm]","Blanket weed","Blanket weed",NA,NA,NA,NA,NA
+"31","Water weed","Proximal_cover_Elodea_[%]","Elodea","Elodea",6,12,7,6,0
+"32","Water weed","Proximal_height_Elodea_[cm]","Elodea","Elodea",6,12,7,6,0
+"33","Water weed","Central_cover_Elodea_[%]","Elodea","Elodea",6,12,7,6,0
+"34","Water weed","Central_height_Elodea_[cm]","Elodea","Elodea",6,12,7,6,0
+"35","Water weed","Distal_cover_Elodea_[%]","Elodea","Elodea",6,12,7,6,0
+"36","Water weed","Distal_height_Elodea_[cm]","Elodea","Elodea",6,12,7,6,0
+"37",NA,"Proximal_cover_Carex_[%]","Carex","Carex",NA,NA,NA,NA,NA
+"38",NA,"Proximal_height_Carex_[cm]","Carex","Carex",NA,NA,NA,NA,NA
+"39",NA,"Central_cover_Carex_[%]","Carex","Carex",NA,NA,NA,NA,NA
+"40",NA,"Central_height_Carex_[cm]","Carex","Carex",NA,NA,NA,NA,NA
+"41",NA,"Distal_cover_Carex_[%]","Carex","Carex",NA,NA,NA,NA,NA
+"42",NA,"Distal_height_Carex_[cm]","Carex","Carex",NA,NA,NA,NA,NA
+"43","Two-ranked sedge","Proximal_cover_Carex disticha_[%]","Carex disticha","Carex disticha",7,8,6,4,0
+"44","Two-ranked sedge","Proximal_height_Carex disticha_[cm]","Carex disticha","Carex disticha",7,8,6,4,0
+"45","Two-ranked sedge","Central_cover_Carex disticha_[%]","Carex disticha","Carex disticha",7,8,6,4,0
+"46","Two-ranked sedge","Central_height_Carex disticha_[cm]","Carex disticha","Carex disticha",7,8,6,4,0
+"47","Two-ranked sedge","Distal_cover_Carex disticha_[%]","Carex disticha","Carex disticha",7,8,6,4,0
+"48","Two-ranked sedge","Distal_height_Carex disticha_[cm]","Carex disticha","Carex disticha",7,8,6,4,0
+"49",NA,"Proximal_cover_Carex (large glaucous)_[%]","Carex large glaucous","Carex large glaucous",7,5,6,2,0
+"50",NA,"Proximal_cover_Carex (large glaucous)_[%]","Carex large glaucous","Carex large glaucous",7,5,6,2,0
+"51",NA,"Proximal_height_Carex (large glaucous)_[cm]","Carex large glaucous","Carex large glaucous",7,5,6,2,0
+"52",NA,"Proximal_height_Carex (large glaucous)_[cm]","Carex large glaucous","Carex large glaucous",7,5,6,2,0
+"53",NA,"Central_cover_Carex (large glaucous)_[%]","Carex large glaucous","Carex large glaucous",7,5,6,2,0
+"54",NA,"Central_cover_Carex (large glaucous)_[%]","Carex large glaucous","Carex large glaucous",7,5,6,2,0
+"55",NA,"Central_height_Carex (large glaucous)_[cm]","Carex large glaucous","Carex large glaucous",7,5,6,2,0
+"56",NA,"Central_height_Carex (large glaucous)_[cm]","Carex large glaucous","Carex large glaucous",7,5,6,2,0
+"57",NA,"Distal_cover_Carex (large glaucous)_[%]","Carex large glaucous","Carex large glaucous",7,5,6,2,0
+"58",NA,"Distal_cover_Carex (large glaucous)_[%]","Carex large glaucous","Carex large glaucous",7,5,6,2,0
+"59",NA,"Distal_height_Carex (large glaucous)_[cm]","Carex large glaucous","Carex large glaucous",7,5,6,2,0
+"60",NA,"Distal_height_Carex (large glaucous)_[cm]","Carex large glaucous","Carex large glaucous",7,5,6,2,0
+"61","Hop sedge","Proximal_cover_Carex pseudocyperus_[%]","Carex pseudocyperus","Carex pseudocyperus",7,9,6,6,0
+"62","Hop sedge","Proximal_height_Carex pseudocyperus_[cm]","Carex pseudocyperus","Carex pseudocyperus",7,9,6,6,0
+"63","Hop sedge","Central_cover_Carex pseudocyperus_[%]","Carex pseudocyperus","Carex pseudocyperus",7,9,6,6,0
+"64","Hop sedge","Central_height_Carex pseudocyperus_[cm]","Carex pseudocyperus","Carex pseudocyperus",7,9,6,6,0
+"65","Hop sedge","Distal_cover_Carex pseudocyperus_[%]","Carex pseudocyperus","Carex pseudocyperus",7,9,6,6,0
+"66","Hop sedge","Distal_height_Carex pseudocyperus_[cm]","Carex pseudocyperus","Carex pseudocyperus",7,9,6,6,0
+"67",NA,"Proximal_cover_Glyceria_[%]","Glyceria","Glyceria",7,10,6,6,0
+"68",NA,"Proximal_height_Glyceria_[cm]","Glyceria","Glyceria",7,10,6,6,0
+"69",NA,"Central_cover_Glyceria_[%]","Glyceria","Glyceria",7,10,6,6,0
+"70",NA,"Central_height_Glyceria_[cm]","Glyceria","Glyceria",7,10,6,6,0
+"71",NA,"Distal_cover_Glyceria_[%]","Glyceria","Glyceria",7,10,6,6,0
+"72",NA,"Distal_height_Glyceria_[cm]","Glyceria","Glyceria",7,10,6,6,0
+"73","Water mannagrass","Proximal_cover_Glyceria fluitans_[%]","Glyceria fluitans","Glyceria fluitans",7,10,6,6,0
+"74","Water mannagrass","Proximal_height_Glyceria fluitans_[cm]","Glyceria fluitans","Glyceria fluitans",7,10,6,6,0
+"75","Water mannagrass","Central_cover_Glyceria fluitans_[%]","Glyceria fluitans","Glyceria fluitans",7,10,6,6,0
+"76","Water mannagrass","Central_height_Glyceria fluitans_[cm]","Glyceria fluitans","Glyceria fluitans",7,10,6,6,0
+"77","Water mannagrass","Distal_cover_Glyceria fluitans_[%]","Glyceria fluitans","Glyceria fluitans",7,10,6,6,0
+"78","Water mannagrass","Distal_height_Glyceria fluitans_[cm]","Glyceria fluitans","Glyceria fluitans",7,10,6,6,0
+"79","Reed mannagrass","Proximal_cover_Glyceria maxima_[%]","Glyceria maxima","Glyceria maxima",7,10,7,8,0
+"80","Reed mannagrass","Proximal_height_Glyceria maxima_[cm]","Glyceria maxima","Glyceria maxima",7,10,7,8,0
+"81","Reed mannagrass","Central_cover_Glyceria maxima_[%]","Glyceria maxima","Glyceria maxima",7,10,7,8,0
+"82","Reed mannagrass","Central_height_Glyceria maxima_[cm]","Glyceria maxima","Glyceria maxima",7,10,7,8,0
+"83","Reed mannagrass","Distal_cover_Glyceria maxima_[%]","Glyceria maxima","Glyceria maxima",7,10,7,8,0
+"84","Reed mannagrass","Distal_height_Glyceria maxima_[cm]","Glyceria maxima","Glyceria maxima",7,10,7,8,0
+"85",NA,"Proximal_cover_Juncus_[%]","Juncus","Juncus",NA,NA,NA,NA,NA
+"86",NA,"Proximal_height_Juncus_[cm]","Juncus","Juncus",NA,NA,NA,NA,NA
+"87",NA,"Central_cover_Juncus_[%]","Juncus","Juncus",NA,NA,NA,NA,NA
+"88",NA,"Central_height_Juncus_[cm]","Juncus","Juncus",NA,NA,NA,NA,NA
+"89",NA,"Distal_cover_Juncus_[%]","Juncus","Juncus",NA,NA,NA,NA,NA
+"90",NA,"Distal_height_Juncus_[cm]","Juncus","Juncus",NA,NA,NA,NA,NA
+"91","Juncus effusus","Proximal_cover_Juncus effusus_[%]","Juncus effusus","Juncus effusus",7,7,4,4,0
+"92","Juncus effusus","Proximal_height_Juncus effusus_[cm]","Juncus effusus","Juncus effusus",7,7,4,4,0
+"93","Juncus effusus","Central_cover_Juncus effusus_[%]","Juncus effusus","Juncus effusus",7,7,4,4,0
+"94","Juncus effusus","Central_height_Juncus effusus_[cm]","Juncus effusus","Juncus effusus",7,7,4,4,0
+"95","Juncus effusus","Distal_cover_Juncus effusus_[%]","Juncus effusus","Juncus effusus",7,7,4,4,0
+"96","Juncus effusus","Distal_height_Juncus effusus_[cm]","Juncus effusus","Juncus effusus",7,7,4,4,0
+"97","Juncus subnodulosus","Proximal_cover_Juncus subnodulosus_[%]","Juncus subnodulosus","Juncus subnodulosus",8,9,8,4,0
+"98","Juncus subnodulosus","Proximal_height_Juncus subnodulosus_[cm]","Juncus subnodulosus","Juncus subnodulosus",8,9,8,4,0
+"99","Juncus subnodulosus","Central_cover_Juncus subnodulosus_[%]","Juncus subnodulosus","Juncus subnodulosus",8,9,8,4,0
+"100","Juncus subnodulosus","Central_height_Juncus subnodulosus_[cm]","Juncus subnodulosus","Juncus subnodulosus",8,9,8,4,0
+"101","Juncus subnodulosus","Distal_cover_Juncus subnodulosus_[%]","Juncus subnodulosus","Juncus subnodulosus",8,9,8,4,0
+"102","Juncus subnodulosus","Distal_height_Juncus subnodulosus_[cm]","Juncus subnodulosus","Juncus subnodulosus",8,9,8,4,0
+"103","Typha latifolia","Proximal_cover_Typha_[%]","Typha","Typha",8,10,7,7,0
+"104","Typha latifolia","Proximal_height_Typha_[cm]","Typha","Typha",8,10,7,7,0
+"105","Typha latifolia","Central_cover_Typha_[%]","Typha","Typha",8,10,7,7,0
+"106","Typha latifolia","Central_height_Typha_[cm]","Typha","Typha",8,10,7,7,0
+"107","Typha latifolia","Distal_cover_Typha_[%]","Typha","Typha",8,10,7,7,0
+"108","Typha latifolia","Distal_height_Typha_[cm]","Typha","Typha",8,10,7,7,0
+"109","Iris pseudacorus","Proximal_cover_Yellow flag_[%]","Yellow flag","Yellow flag",7,9,6,6,1
+"110","Iris pseudacorus","Proximal_height_Yellow flag_[cm]","Yellow flag","Yellow flag",7,9,6,6,1
+"111","Iris pseudacorus","Central_cover_Yellow flag_[%]","Yellow flag","Yellow flag",7,9,6,6,1
+"112","Iris pseudacorus","Central_height_Yellow flag_[cm]","Yellow flag","Yellow flag",7,9,6,6,1
+"113","Iris pseudacorus","Distal_cover_Yellow Flag_[%]","Yellow Flag","Yellow flag",7,9,6,6,1
+"114","Iris pseudacorus","Distal_height_Yellow Flag_[cm]","Yellow Flag","Yellow flag",7,9,6,6,1
+"115","Persicaria amphibia","Proximal_cover_Amphibian bistort_[%]","Amphibian bistort","Amphibian bistort",7,10,6,6,0
+"116","Persicaria amphibia","Proximal_height_Amphibian bistort_[cm]","Amphibian bistort","Amphibian bistort",7,10,6,6,0
+"117","Persicaria amphibia","Central_cover_Amphibian bistort_[%]","Amphibian bistort","Amphibian bistort",7,10,6,6,0
+"118","Persicaria amphibia","Central_height_Amphibian bistort_[cm]","Amphibian bistort","Amphibian bistort",7,10,6,6,0
+"119","Persicaria amphibia","Distal_cover_Amphibian bistort_[%]","Amphibian bistort","Amphibian bistort",7,10,6,6,0
+"120","Persicaria amphibia","Distal_height_Amphibian bistort_[cm]","Amphibian bistort","Amphibian bistort",7,10,6,6,0
+"121","Sagittaria","Proximal_cover_Arrow head_[%]","Arrow head","Arrow head",7,11,7,6,0
+"122","Sagittaria","Proximal_height_Arrow head_[cm]","Arrow head","Arrow head",7,11,7,6,0
+"123","Sagittaria","Central_cover_Arrow head_[%]","Arrow head","Arrow head",7,11,7,6,0
+"124","Sagittaria","Central_height_Arrow head_[cm]","Arrow head","Arrow head",7,11,7,6,0
+"125","Sagittaria","Distal_cover_Arrow head_[%]","Arrow head","Arrow head",7,11,7,6,0
+"126","Sagittaria","Distal_height_Arrow head_[cm]","Arrow head","Arrow head",7,11,7,6,0
+"127",NA,"Proximal_cover_Bare mud_[%]","Bare mud",NA,NA,NA,NA,NA,NA
+"128",NA,"Proximal_height_Bare mud_[cm]","Bare mud",NA,NA,NA,NA,NA,NA
+"129",NA,"Central_cover_Bare mud_[%]","Bare mud",NA,NA,NA,NA,NA,NA
+"130",NA,"Central_height_Bare mud_[cm]","Bare mud",NA,NA,NA,NA,NA,NA
+"131",NA,"Distal_cover_Bare mud_[%]","Bare mud",NA,NA,NA,NA,NA,NA
+"132",NA,"Distal_height_Bare mud_[cm]","Bare mud",NA,NA,NA,NA,NA,NA
+"133","Agrostis stolonifera","Proximal_cover_Bentgrass _[%]","Bentgrass ","Bentgrass",7,6,7,6,1
+"134","Agrostis stolonifera","Proximal_height_Bentgrass _[cm]","Bentgrass ","Bentgrass",7,6,7,6,1
+"135","Agrostis stolonifera","Central_cover_Bentgrass _[%]","Bentgrass ","Bentgrass",7,6,7,6,1
+"136","Agrostis stolonifera","Central_height_Bentgrass _[cm]","Bentgrass ","Bentgrass",7,6,7,6,1
+"137","Agrostis stolonifera","Distal_cover_Bentgrass _[%]","Bentgrass ","Bentgrass",7,6,7,6,1
+"138","Agrostis stolonifera","Distal_height_Bentgrass _[cm]","Bentgrass ","Bentgrass",7,6,7,6,1
+"139","Calystegia sepium","Proximal_cover_Bind weed_[%]","Bind weed","Bind weed",6,5,7,6,0
+"140","Calystegia sepium","Proximal_height_Bind weed_[cm]","Bind weed","Bind weed",6,5,7,6,0
+"141","Calystegia sepium","Central_cover_Bind weed_[%]","Bind weed","Bind weed",6,5,7,6,0
+"142","Calystegia sepium","Central_height_Bind weed_[cm]","Bind weed","Bind weed",6,5,7,6,0
+"143","Calystegia sepium","Distal_cover_Bind weed_[%]","Bind weed","Bind weed",6,5,7,6,0
+"144","Calystegia sepium","Distal_height_Bind weed_[cm]","Bind weed","Bind weed",6,5,7,6,0
+"145","Utricularia","Proximal_cover_Bladderwort_[%]","Bladderwort","Bladderwort",7,12,5,3,0
+"146","Utricularia","Proximal_height_Bladderwort_[cm]","Bladderwort","Bladderwort",7,12,5,3,0
+"147","Utricularia","Central_cover_Bladderwort_[%]","Bladderwort","Bladderwort",7,12,5,3,0
+"148","Utricularia","Central_height_Bladderwort_[cm]","Bladderwort","Bladderwort",7,12,5,3,0
+"149","Utricularia","Distal_cover_Bladderwort_[%]","Bladderwort","Bladderwort",7,12,5,3,0
+"150","Utricularia","Distal_height_Bladderwort_[cm]","Bladderwort","Bladderwort",7,12,5,3,0
+"151","Bolboschoenus","Proximal_cover_Bolboschoenus_[%]","Bolboschoenus","Bolboschoenus",8,10,8,7,4
+"152","Bolboschoenus","Proximal_height_Bolboschoenus_[cm]","Bolboschoenus","Bolboschoenus",8,10,8,7,4
+"153","Bolboschoenus","Central_cover_Bolboschoenus_[%]","Bolboschoenus","Bolboschoenus",8,10,8,7,4
+"154","Bolboschoenus","Central_height_Bolboschoenus_[cm]","Bolboschoenus","Bolboschoenus",8,10,8,7,4
+"155","Bolboschoenus","Distal_cover_Bolboschoenus_[%]","Bolboschoenus","Bolboschoenus",8,10,8,7,4
+"156","Bolboschoenus","Distal_height_Bolboschoenus_[cm]","Bolboschoenus","Bolboschoenus",8,10,8,7,4
+"157",NA,"Proximal_cover_Bramble_[%]","Bramble","Bramble",NA,NA,NA,NA,NA
+"158",NA,"Proximal_height_Bramble_[cm]","Bramble","Bramble",NA,NA,NA,NA,NA
+"159",NA,"Central_cover_Bramble_[%]","Bramble","Bramble",NA,NA,NA,NA,NA
+"160",NA,"Central_height_Bramble_[cm]","Bramble","Bramble",NA,NA,NA,NA,NA
+"161",NA,"Distal_cover_Bramble_[%]","Bramble","Bramble",NA,NA,NA,NA,NA
+"162",NA,"Distal_height_Bramble_[cm]","Bramble","Bramble",NA,NA,NA,NA,NA
+"163","Sparganium erectum","Proximal_cover_Branched bur-reed_[%]","Branched burreed","Branched burreed",7,10,7,7,0
+"164","Sparganium erectum","Proximal_height_Branched bur-reed_[cm]","Branched burreed","Branched burreed",7,10,7,7,0
+"165","Sparganium erectum","Central_cover_Branched bur-reed_[%]","Branched burreed","Branched burreed",7,10,7,7,0
+"166","Sparganium erectum","Central_height_Branched bur-reed_[cm]","Branched burreed","Branched burreed",7,10,7,7,0
+"167","Sparganium erectum","Distal_cover_Branched bur-reed_[%]","Branched burreed","Branched burreed",7,10,7,7,0
+"168","Sparganium erectum","Distal_height_Branched bur-reed_[cm]","Branched burreed","Branched burreed",7,10,7,7,0
+"169","Lycopus europaeus","Proximal_cover_Bugleweed_[%]","Bugleweed","Bugleweed",5,7,5,5,0
+"170","Lycopus europaeus","Proximal_height_Bugleweed_[cm]","Bugleweed","Bugleweed",5,7,5,5,0
+"171","Lycopus europaeus","Central_cover_Bugleweed_[%]","Bugleweed","Bugleweed",5,7,5,5,0
+"172","Lycopus europaeus","Central_height_Bugleweed_[cm]","Bugleweed","Bugleweed",5,7,5,5,0
+"173","Lycopus europaeus","Distal_cover_Bugleweed_[%]","Bugleweed","Bugleweed",5,7,5,5,0
+"174","Lycopus europaeus","Distal_height_Bugleweed_[cm]","Bugleweed","Bugleweed",5,7,5,5,0
+"175",NA,"Proximal_cover_Buttercup_[%]","Buttercup","Buttercup",6,5,6,5,0
+"176",NA,"Proximal_height_Buttercup_[cm]","Buttercup","Buttercup",6,5,6,5,0
+"177",NA,"Central_cover_Buttercup_[%]","Buttercup","Buttercup",6,5,6,5,0
+"178",NA,"Central_height_Buttercup_[cm]","Buttercup","Buttercup",6,5,6,5,0
+"179",NA,"Distal_cover_Buttercup_[%]","Buttercup","Buttercup",6,5,6,5,0
+"180",NA,"Distal_height_Buttercup_[cm]","Buttercup","Buttercup",6,5,6,5,0
+"181","Ranunculus sceleratus","Proximal_cover_Celery-leaved buttercup_[%]","Celeryleaved buttercup","Celeryleaved buttercup",8,8,8,8,2
+"182","Ranunculus sceleratus","Proximal_height_Celery-leaved buttercup_[cm]","Celeryleaved buttercup","Celeryleaved buttercup",8,8,8,8,2
+"183","Ranunculus sceleratus","Central_cover_Celery-leaved buttercup_[%]","Celeryleaved buttercup","Celeryleaved buttercup",8,8,8,8,2
+"184","Ranunculus sceleratus","Central_height_Celery-leaved buttercup_[cm]","Celeryleaved buttercup","Celeryleaved buttercup",8,8,8,8,2
+"185","Ranunculus sceleratus","Distal_cover_Celery-leaved buttercup_[%]","Celeryleaved buttercup","Celeryleaved buttercup",8,8,8,8,2
+"186","Ranunculus sceleratus","Distal_height_Celery-leaved buttercup_[cm]","Celeryleaved buttercup","Celeryleaved buttercup",8,8,8,8,2
+"187",NA,"Proximal_cover_Clover_[%]","Clover","Clover",NA,NA,NA,NA,NA
+"188",NA,"Proximal_height_Clover_[cm]","Clover","Clover",NA,NA,NA,NA,NA
+"189",NA,"Central_cover_Clover_[%]","Clover","Clover",NA,NA,NA,NA,NA
+"190",NA,"Central_height_Clover_[cm]","Clover","Clover",NA,NA,NA,NA,NA
+"191",NA,"Distal_cover_Clover_[%]","Clover","Clover",NA,NA,NA,NA,NA
+"192",NA,"Distal_height_Clover_[cm]","Clover","Clover",NA,NA,NA,NA,NA
+"193","Symphytum officinale","Proximal_cover_Comfrey_[%]","Comfrey","Comfrey",6,5,6,6,0
+"194","Symphytum officinale","Proximal_height_Comfrey_[cm]","Comfrey","Comfrey",6,5,6,6,0
+"195","Symphytum officinale","Central_cover_Comfrey_[%]","Comfrey","Comfrey",6,5,6,6,0
+"196","Symphytum officinale","Central_height_Comfrey_[cm]","Comfrey","Comfrey",6,5,6,6,0
+"197","Symphytum officinale","Distal_cover_Comfrey_[%]","Comfrey","Comfrey",6,5,6,6,0
+"198","Symphytum officinale","Distal_height_Comfrey_[cm]","Comfrey","Comfrey",6,5,6,6,0
+"199","Eleocharis palustris","Proximal_cover_Common spike-rush_[%]","Common spikerush","Common spikerush",8,10,6,4,1
+"200","Eleocharis palustris","Proximal_height_Common spike-rush_[cm]","Common spikerush","Common spikerush",8,10,6,4,1
+"201","Eleocharis palustris","Central_cover_Common spike-rush_[%]","Common spikerush","Common spikerush",8,10,6,4,1
+"202","Eleocharis palustris","Central_height_Common spike-rush_[cm]","Common spikerush","Common spikerush",8,10,6,4,1
+"203","Eleocharis palustris","Distal_cover_Common spike-rush_[%]","Common spikerush","Common spikerush",8,10,6,4,1
+"204","Eleocharis palustris","Distal_height_Common spike-rush_[cm]","Common spikerush","Common spikerush",8,10,6,4,1
+"205","Horsetail","Proximal_cover_Equisetum_[%]","Equisetum","Equisetum",6,7,6,4,0
+"206","Horsetail","Proximal_height_Equisetum_[cm]","Equisetum","Equisetum",6,7,6,4,0
+"207","Horsetail","Central_cover_Equisetum_[%]","Equisetum","Equisetum",6,7,6,4,0
+"208","Horsetail","Central_height_Equisetum_[cm]","Equisetum","Equisetum",6,7,6,4,0
+"209","Horsetail","Distal_cover_Equisetum_[%]","Equisetum","Equisetum",6,7,6,4,0
+"210","Horsetail","Distal_height_Equisetum_[cm]","Equisetum","Equisetum",6,7,6,4,0
+"211","Dryopteris sp","Proximal_cover_Fern_[%]","Fern","Fern",NA,NA,NA,NA,NA
+"212","Dryopteris sp","Proximal_height_Fern_[cm]","Fern","Fern",NA,NA,NA,NA,NA
+"213","Dryopteris sp","Central_cover_Fern_[%]","Fern","Fern",NA,NA,NA,NA,NA
+"214","Dryopteris sp","Central_height_Fern_[cm]","Fern","Fern",NA,NA,NA,NA,NA
+"215","Dryopteris sp","Distal_cover_Fern_[%]","Fern","Fern",NA,NA,NA,NA,NA
+"216","Dryopteris sp","Distal_height_Fern_[cm]","Fern","Fern",NA,NA,NA,NA,NA
+"217",NA,"Proximal_cover_Grass_[%]","Grass","Grass",NA,NA,NA,NA,NA
+"218",NA,"Proximal_height_Grass_[cm]","Grass","Grass",NA,NA,NA,NA,NA
+"219",NA,"Central_cover_Grass_[%]","Grass","Grass",NA,NA,NA,NA,NA
+"220",NA,"Central_height_Grass_[cm]","Grass","Grass",NA,NA,NA,NA,NA
+"221",NA,"Distal_cover_Grass_[%]","Grass","Grass",NA,NA,NA,NA,NA
+"222",NA,"Distal_height_Grass_[cm]","Grass","Grass",NA,NA,NA,NA,NA
+"223","Galium palustre","Proximal_cover_Marsh bedstraw_[%]","Marsh bedstraw","Marsh bedstraw",7,9,5,4,0
+"224","Galium palustre","Proximal_height_Marsh bedstraw_[cm]","Marsh bedstraw","Marsh bedstraw",7,9,5,4,0
+"225","Galium palustre","Central_cover_Marsh bedstraw_[%]","Marsh bedstraw","Marsh bedstraw",7,9,5,4,0
+"226","Galium palustre","Central_height_Marsh bedstraw_[cm]","Marsh bedstraw","Marsh bedstraw",7,9,5,4,0
+"227","Galium palustre","Distal_cover_Marsh bedstraw_[%]","Marsh bedstraw","Marsh bedstraw",7,9,5,4,0
+"228","Galium palustre","Distal_height_Marsh bedstraw_[cm]","Marsh bedstraw","Marsh bedstraw",7,9,5,4,0
+"229","Lotus pedunculatus","Proximal_cover_Marsh bird's foot trefoil_[%]","Marsh birds foot trefoil",NA,NA,NA,NA,NA,NA
+"230","Lotus pedunculatus","Proximal_height_Marsh bird's foot trefoil_[cm]","Marsh birds foot trefoil",NA,NA,NA,NA,NA,NA
+"231","Lotus pedunculatus","Central_cover_Marsh bird's foot trefoil_[%]","Marsh birds foot trefoil",NA,NA,NA,NA,NA,NA
+"232","Lotus pedunculatus","Central_height_Marsh bird's foot trefoil_[cm]","Marsh birds foot trefoil",NA,NA,NA,NA,NA,NA
+"233","Lotus pedunculatus","Distal_cover_Marsh bird's foot trefoil_[%]","Marsh birds foot trefoil",NA,NA,NA,NA,NA,NA
+"234","Lotus pedunculatus","Distal_height_Marsh bird's foot trefoil_[cm]","Marsh birds foot trefoil",NA,NA,NA,NA,NA,NA
+"235","Senecio aquaticus","Proximal_cover_Marsh ragwort_[%]","Marsh ragwort","Marsh ragwort",7,8,6,5,0
+"236","Senecio aquaticus","Proximal_height_Marsh ragwort_[cm]","Marsh ragwort","Marsh ragwort",7,8,6,5,0
+"237","Senecio aquaticus","Central_cover_Marsh ragwort_[%]","Marsh ragwort","Marsh ragwort",7,8,6,5,0
+"238","Senecio aquaticus","Central_height_Marsh ragwort_[cm]","Marsh ragwort","Marsh ragwort",7,8,6,5,0
+"239","Senecio aquaticus","Distal_cover_Marsh ragwort_[%]","Marsh ragwort","Marsh ragwort",7,8,6,5,0
+"240","Senecio aquaticus","Distal_height_Marsh ragwort_[cm]","Marsh ragwort","Marsh ragwort",7,8,6,5,0
+"241","Stellaria palustris","Proximal_cover_Marsh Stitchwort_[%]","Marsh Stitchwort","Marsh Stitchwort",7,8,6,4,0
+"242","Stellaria palustris","Proximal_height_Marsh Stitchwort_[cm]","Marsh Stitchwort","Marsh Stitchwort",7,8,6,4,0
+"243","Stellaria palustris","Central_cover_Marsh Stitchwort_[%]","Marsh Stitchwort","Marsh Stitchwort",7,8,6,4,0
+"244","Stellaria palustris","Central_height_Marsh Stitchwort_[cm]","Marsh Stitchwort","Marsh Stitchwort",7,8,6,4,0
+"245","Stellaria palustris","Distal_cover_Marsh Stitchwort_[%]","Marsh Stitchwort","Marsh Stitchwort",7,8,6,4,0
+"246","Stellaria palustris","Distal_height_Marsh Stitchwort_[cm]","Marsh Stitchwort","Marsh Stitchwort",7,8,6,4,0
+"247","Filipendula ulmaria","Proximal_cover_Meadow sweet_[%]","Meadow sweet","Meadow sweet",7,8,6,5,0
+"248","Filipendula ulmaria","Proximal_height_Meadow sweet_[cm]","Meadow sweet","Meadow sweet",7,8,6,5,0
+"249","Filipendula ulmaria","Central_cover_Meadow sweet_[%]","Meadow sweet","Meadow sweet",7,8,6,5,0
+"250","Filipendula ulmaria","Central_height_Meadow sweet_[cm]","Meadow sweet","Meadow sweet",7,8,6,5,0
+"251","Filipendula ulmaria","Distal_cover_Meadow sweet_[%]","Meadow sweet","Meadow sweet",7,8,6,5,0
+"252","Filipendula ulmaria","Distal_height_Meadow sweet_[cm]","Meadow sweet","Meadow sweet",7,8,6,5,0
+"253","Lysimachia nummularia","Proximal_cover_Moneywort_[%]","Moneywort","Moneywort",5,7,5,5,0
+"254","Lysimachia nummularia","Proximal_height_Moneywort_[cm]","Moneywort","Moneywort",5,7,5,5,0
+"255","Lysimachia nummularia","Central_cover_Moneywort_[%]","Moneywort","Moneywort",5,7,5,5,0
+"256","Lysimachia nummularia","Central_height_Moneywort_[cm]","Moneywort","Moneywort",5,7,5,5,0
+"257","Lysimachia nummularia","Distal_cover_Moneywort_[%]","Moneywort","Moneywort",5,7,5,5,0
+"258","Lysimachia nummularia","Distal_height_Moneywort_[cm]","Moneywort","Moneywort",5,7,5,5,0
+"259","Urtica dioica","Proximal_cover_Nettle_[%]","Nettle","Nettle",6,6,7,8,0
+"260","Urtica dioica","Proximal_height_Nettle_[cm]","Nettle","Nettle",6,6,7,8,0
+"261","Urtica dioica","Central_cover_Nettle_[%]","Nettle","Nettle",6,6,7,8,0
+"262","Urtica dioica","Central_height_Nettle_[cm]","Nettle","Nettle",6,6,7,8,0
+"263","Urtica dioica","Distal_cover_Nettle_[%]","Nettle","Nettle",6,6,7,8,0
+"264","Urtica dioica","Distal_height_Nettle_[cm]","Nettle","Nettle",6,6,7,8,0
+"265",NA,"Proximal_cover_Phragmites_[%]","Phragmites","Phragmites",7,10,7,6,2
+"266",NA,"Proximal_height_Phragmites_[cm]","Phragmites","Phragmites",7,10,7,6,2
+"267",NA,"Central_cover_Phragmites_[%]","Phragmites","Phragmites",7,10,7,6,2
+"268",NA,"Central_height_Phragmites_[cm]","Phragmites","Phragmites",7,10,7,6,2
+"269",NA,"Distal_cover_Phragmites_[%]","Phragmites","Phragmites",7,10,7,6,2
+"270",NA,"Distal_height_Phragmites_[cm]","Phragmites","Phragmites",7,10,7,6,2
+"271","Veronica catenata","Proximal_cover_Pink water speedwell_[%]","Pink water speedwell","Pink water speedwell",8,10,7,8,0
+"272","Veronica catenata","Proximal_height_Pink water speedwell_[cm]","Pink water speedwell","Pink water speedwell",8,10,7,8,0
+"273","Veronica catenata","Central_cover_Pink water speedwell_[%]","Pink water speedwell","Pink water speedwell",8,10,7,8,0
+"274","Veronica catenata","Central_height_Pink water speedwell_[cm]","Pink water speedwell","Pink water speedwell",8,10,7,8,0
+"275","Veronica catenata","Distal_cover_Pink water speedwell_[%]","Pink water speedwell","Pink water speedwell",8,10,7,8,0
+"276","Veronica catenata","Distal_height_Pink water speedwell_[cm]","Pink water speedwell","Pink water speedwell",8,10,7,8,0
+"277","Fleabane","Proximal_cover_Pulicaria dysenterica_[%]","Pulicaria dysenterica","Pulicaria dysenterica",7,7,7,4,0
+"278","Fleabane","Proximal_height_Pulicaria dysenterica_[cm]","Pulicaria dysenterica","Pulicaria dysenterica",7,7,7,4,0
+"279","Fleabane","Central_cover_Pulicaria dysenterica_[%]","Pulicaria dysenterica","Pulicaria dysenterica",7,7,7,4,0
+"280","Fleabane","Central_height_Pulicaria dysenterica_[cm]","Pulicaria dysenterica","Pulicaria dysenterica",7,7,7,4,0
+"281","Fleabane","Distal_cover_Pulicaria dysenterica_[%]","Pulicaria dysenterica","Pulicaria dysenterica",7,7,7,4,0
+"282","Fleabane","Distal_height_Pulicaria dysenterica_[cm]","Pulicaria dysenterica","Pulicaria dysenterica",7,7,7,4,0
+"283","Lythrum salicaria","Proximal_cover_Purple loosestrife_[%]","Purple loosestrife","Purple loosestrife",7,9,7,5,0
+"284","Lythrum salicaria","Proximal_height_Purple loosestrife_[cm]","Purple loosestrife","Purple loosestrife",7,9,7,5,0
+"285","Lythrum salicaria","Central_cover_Purple loosestrife_[%]","Purple loosestrife","Purple loosestrife",7,9,7,5,0
+"286","Lythrum salicaria","Central_height_Purple loosestrife_[cm]","Purple loosestrife","Purple loosestrife",7,9,7,5,0
+"287","Lythrum salicaria","Distal_cover_Purple loosestrife_[%]","Purple loosestrife","Purple loosestrife",7,9,7,5,0
+"288","Lythrum salicaria","Distal_height_Purple loosestrife_[cm]","Purple loosestrife","Purple loosestrife",7,9,7,5,0
+"289","Phalaris arundinacea","Proximal_cover_Reed canary grass_[%]","Reed canary grass","Reed canary grass",7,9,7,7,1
+"290","Phalaris arundinacea","Proximal_height_Reed canary grass_[cm]","Reed canary grass","Reed canary grass",7,9,7,7,1
+"291","Phalaris arundinacea","Central_cover_Reed canary grass_[%]","Reed canary grass","Reed canary grass",7,9,7,7,1
+"292","Phalaris arundinacea","Central_height_Reed canary grass_[cm]","Reed canary grass","Reed canary grass",7,9,7,7,1
+"293","Phalaris arundinacea","Distal_cover_Reed canary grass_[%]","Reed canary grass","Reed canary grass",7,9,7,7,1
+"294","Phalaris arundinacea","Distal_height_Reed canary grass_[cm]","Reed canary grass","Reed canary grass",7,9,7,7,1
+"295","Schoenoplectus tabernaemontani","Proximal_cover_Softstem bulrush_[%]","Softstem bulrush","Softstem bulrush",9,10,8,7,3
+"296","Schoenoplectus tabernaemontani","Proximal_height_Softstem bulrush_[cm]","Softstem bulrush","Softstem bulrush",9,10,8,7,3
+"297","Schoenoplectus tabernaemontani","Central_cover_Softstem bulrush_[%]","Softstem bulrush","Softstem bulrush",9,10,8,7,3
+"298","Schoenoplectus tabernaemontani","Central_height_Softstem bulrush_[cm]","Softstem bulrush","Softstem bulrush",9,10,8,7,3
+"299","Schoenoplectus tabernaemontani","Distal_cover_Softstem bulrush_[%]","Softstem bulrush","Softstem bulrush",9,10,8,7,3
+"300","Schoenoplectus tabernaemontani","Distal_height_Softstem bulrush_[cm]","Softstem bulrush","Softstem bulrush",9,10,8,7,3
+"301","Callitriche spp","Proximal_cover_Starwort_[%]","Starwort","Starwort",NA,NA,NA,NA,NA
+"302","Callitriche spp","Proximal_height_Starwort_[cm]","Starwort","Starwort",NA,NA,NA,NA,NA
+"303","Callitriche spp","Central_cover_Starwort_[%]","Starwort","Starwort",NA,NA,NA,NA,NA
+"304","Callitriche spp","Central_height_Starwort_[cm]","Starwort","Starwort",NA,NA,NA,NA,NA
+"305","Callitriche spp","Distal_cover_Starwort_[%]","Starwort","Starwort",NA,NA,NA,NA,NA
+"306","Callitriche spp","Distal_height_Starwort_[cm]","Starwort","Starwort",NA,NA,NA,NA,NA
+"307",NA,"Proximal_cover_Teasel_[%]","Teasel","Teasal",NA,NA,NA,NA,NA
+"308",NA,"Proximal_height_Teasel_[cm]","Teasel","Teasal",NA,NA,NA,NA,NA
+"309",NA,"Central_cover_Teasel_[%]","Teasel","Teasal",NA,NA,NA,NA,NA
+"310",NA,"Central_height_Teasel_[cm]","Teasel","Teasal",NA,NA,NA,NA,NA
+"311",NA,"Distal_cover_Teasel_[%]","Teasel","Teasal",NA,NA,NA,NA,NA
+"312",NA,"Distal_height_Teasel_[cm]","Teasel","Teasal",NA,NA,NA,NA,NA
+"313",NA,"Proximal_cover_Thistle_[%]","Thistle","Thistle",7,4,8,5,0
+"314",NA,"Proximal_height_Thistle_[cm]","Thistle","Thistle",7,4,8,5,0
+"315",NA,"Central_cover_Thistle_[%]","Thistle","Thistle",7,4,8,5,0
+"316",NA,"Central_height_Thistle_[cm]","Thistle","Thistle",7,4,8,5,0
+"317",NA,"Distal_cover_Thistle_[%]","Thistle","Thistle",7,4,8,5,0
+"318",NA,"Distal_height_Thistle_[cm]","Thistle","Thistle",7,4,8,5,0
+"319","Oenanthe aquatica","Proximal_cover_Fine-leaved water dropwort_[%]","Fineleaved water dropwort","Fineleaved water dropwort",7,10,7,6,0
+"320","Oenanthe aquatica","Proximal_height_Fine-leaved water dropwort_[cm]","Fineleaved water dropwort","Fineleaved water dropwort",7,10,7,6,0
+"321","Oenanthe aquatica","Central_cover_Fine-leaved water dropwort_[%]","Fineleaved water dropwort","Fineleaved water dropwort",7,10,7,6,0
+"322","Oenanthe aquatica","Central_height_Fine-leaved water dropwort_[cm]","Fineleaved water dropwort","Fineleaved water dropwort",7,10,7,6,0
+"323","Oenanthe aquatica","Distal_cover_Fine-leaved water dropwort_[%]","Fineleaved water dropwort","Fineleaved water dropwort",7,10,7,6,0
+"324","Oenanthe aquatica","Distal_height_Fine-leaved water dropwort_[cm]","Fineleaved water dropwort","Fineleaved water dropwort",7,10,7,6,0
+"325","Oenanthe crocata","Proximal_cover_Hemlock water dropwort_[%]","Hemlock water dropwort","Hemlock water dropwort",7,9,6,7,1
+"326","Oenanthe crocata","Proximal_height_Hemlock water dropwort_[cm]","Hemlock water dropwort","Hemlock water dropwort",7,9,6,7,1
+"327","Oenanthe crocata","Central_cover_Hemlock water dropwort_[%]","Hemlock water dropwort","Hemlock water dropwort",7,9,6,7,1
+"328","Oenanthe crocata","Central_height_Hemlock water dropwort_[cm]","Hemlock water dropwort","Hemlock water dropwort",7,9,6,7,1
+"329","Oenanthe crocata","Distal_cover_Hemlock water dropwort_[%]","Hemlock water dropwort","Hemlock water dropwort",7,9,6,7,1
+"330","Oenanthe crocata","Distal_height_Hemlock water dropwort_[cm]","Hemlock water dropwort","Hemlock water dropwort",7,9,6,7,1
+"331","Oenanthe fistulosa","Proximal_cover_Tubular water dropwort_[%]","Tubular water dropwort","Tubular water dropwort",7,9,7,6,0
+"332","Oenanthe fistulosa","Proximal_height_Tubular water dropwort_[cm]","Tubular water dropwort","Tubular water dropwort",7,9,7,6,0
+"333","Oenanthe fistulosa","Central_cover_Tubular water dropwort_[%]","Tubular water dropwort","Tubular water dropwort",7,9,7,6,0
+"334","Oenanthe fistulosa","Central_height_Tubular water dropwort_[cm]","Tubular water dropwort","Tubular water dropwort",7,9,7,6,0
+"335","Oenanthe fistulosa","Distal_cover_Tubular water dropwort_[%]","Tubular water dropwort","Tubular water dropwort",7,9,7,6,0
+"336","Oenanthe fistulosa","Distal_height_Tubular water dropwort_[cm]","Tubular water dropwort","Tubular water dropwort",7,9,7,6,0
+"337",NA,"Proximal_cover_Water dropwort - filamentous leaves_[%]","Water dropwort  filamentous leaves","Water dropwort filamentous leaves",7,10,7,6,0
+"338",NA,"Proximal_height_Water dropwort - filamentous leaves_[cm]","Water dropwort  filamentous leaves","Water dropwort filamentous leaves",7,10,7,6,0
+"339",NA,"Central_cover_Water dropwort - filamentous leaves_[%]","Water dropwort  filamentous leaves","Water dropwort filamentous leaves",7,10,7,6,0
+"340",NA,"Central_height_Water dropwort - filamentous leaves_[cm]","Water dropwort  filamentous leaves","Water dropwort filamentous leaves",7,10,7,6,0
+"341",NA,"Distal_cover_Water dropwort - filamentous leaves_[%]","Water dropwort  filamentous leaves","Water dropwort filamentous leaves",7,10,7,6,0
+"342",NA,"Distal_height_Water dropwort - filamentous leaves_[cm]","Water dropwort  filamentous leaves","Water dropwort filamentous leaves",7,10,7,6,0
+"343","Myosoton aquaticum","Proximal_cover_Water chickweed_[%]","Water chickweed","Water chickweed",6,7,6,7,0
+"344","Myosoton aquaticum","Proximal_height_Water chickweed_[cm]","Water chickweed","Water chickweed",6,7,6,7,0
+"345","Myosoton aquaticum","Central_cover_Water chickweed_[%]","Water chickweed","Water chickweed",6,7,6,7,0
+"346","Myosoton aquaticum","Central_height_Water chickweed_[cm]","Water chickweed","Water chickweed",6,7,6,7,0
+"347","Myosoton aquaticum","Distal_cover_Water chickweed_[%]","Water chickweed","Water chickweed",6,7,6,7,0
+"348","Myosoton aquaticum","Distal_height_Water chickweed_[cm]","Water chickweed","Water chickweed",6,7,6,7,0
+"349","Rumex hydrolapathum","Proximal_cover_Water dock_[%]","Water dock","Water dock",7,10,7,6,0
+"350","Rumex hydrolapathum","Proximal_height_Water dock_[cm]","Water dock","Water dock",7,10,7,6,0
+"351","Rumex hydrolapathum","Central_cover_Water dock_[%]","Water dock","Water dock",7,10,7,6,0
+"352","Rumex hydrolapathum","Central_height_Water dock_[cm]","Water dock","Water dock",7,10,7,6,0
+"353","Rumex hydrolapathum","Distal_cover_Water dock_[%]","Water dock","Water dock",7,10,7,6,0
+"354","Rumex hydrolapathum","Distal_height_Water dock_[cm]","Water dock","Water dock",7,10,7,6,0
+"355","Apium nodiflorum","Proximal_cover_Fool's water cress_[%]","Fools water cress","Fools water cress",7,10,7,7,0
+"356","Apium nodiflorum","Proximal_height_Fool's water cress_[cm]","Fools water cress","Fools water cress",7,10,7,7,0
+"357","Apium nodiflorum","Central_cover_Fool's water cress_[%]","Fools water cress","Fools water cress",7,10,7,7,0
+"358","Apium nodiflorum","Central_height_Fool's water cress_[cm]","Fools water cress","Fools water cress",7,10,7,7,0
+"359","Apium nodiflorum","Distal_cover_Fool's water cress_[%]","Fools water cress","Fools water cress",7,10,7,7,0
+"360","Apium nodiflorum","Distal_height_Fool's water cress_[cm]","Fools water cress","Fools water cress",7,10,7,7,0
+"361","Rorippa nasturtium-aquaticum","Proximal_cover_Water cress_[%]","Water cress","Water cress",7,10,7,7,0
+"362","Rorippa nasturtium-aquaticum","Proximal_height_Water cress_[cm]","Water cress","Water cress",7,10,7,7,0
+"363","Rorippa nasturtium-aquaticum","Central_cover_Water cress_[%]","Water cress","Water cress",7,10,7,7,0
+"364","Rorippa nasturtium-aquaticum","Central_height_Water cress_[cm]","Water cress","Water cress",7,10,7,7,0
+"365","Rorippa nasturtium-aquaticum","Distal_cover_Water cress_[%]","Water cress","Water cress",7,10,7,7,0
+"366","Rorippa nasturtium-aquaticum","Distal_height_Water cress_[cm]","Water cress","Water cress",7,10,7,7,0
+"367","Mentha aquatica","Proximal_cover_Water mint_[%]","Water mint","Water mint",7,8,7,5,0
+"368","Mentha aquatica","Proximal_height_Water mint_[cm]","Water mint","Water mint",7,8,7,5,0
+"369","Mentha aquatica","Central_cover_Water mint_[%]","Water mint","Water mint",7,8,7,5,0
+"370","Mentha aquatica","Central_height_Water mint_[cm]","Water mint","Water mint",7,8,7,5,0
+"371","Mentha aquatica","Distal_cover_Water mint_[%]","Water mint","Water mint",7,8,7,5,0
+"372","Mentha aquatica","Distal_height_Water mint_[cm]","Water mint","Water mint",7,8,7,5,0
+"373","Berula erecta","Proximal_cover_Water parsnip_[%]","Water parsnip","Water parsnip",7,10,7,7,0
+"374","Berula erecta","Proximal_height_Water parsnip_[cm]","Water parsnip","Water parsnip",7,10,7,7,0
+"375","Berula erecta","Central_cover_Water parsnip_[%]","Water parsnip","Water parsnip",7,10,7,7,0
+"376","Berula erecta","Central_height_Water parsnip_[cm]","Water parsnip","Water parsnip",7,10,7,7,0
+"377","Berula erecta","Distal_cover_Water parsnip_[%]","Water parsnip","Water parsnip",7,10,7,7,0
+"378","Berula erecta","Distal_height_Water parsnip_[cm]","Water parsnip","Water parsnip",7,10,7,7,0
+"379","Alisma plantago-aquatica","Proximal_cover_Water plantain_[%]","Water plantain","Water plantain",7,10,7,7,0
+"380","Alisma plantago-aquatica","Proximal_height_Water plantain_[cm]","Water plantain","Water plantain",7,10,7,7,0
+"381","Alisma plantago-aquatica","Central_cover_Water plantain_[%]","Water plantain","Water plantain",7,10,7,7,0
+"382","Alisma plantago-aquatica","Central_height_Water plantain_[cm]","Water plantain","Water plantain",7,10,7,7,0
+"383","Alisma plantago-aquatica","Distal_cover_Water plantain_[%]","Water plantain","Water plantain",7,10,7,7,0
+"384","Alisma plantago-aquatica","Distal_height_Water plantain_[cm]","Water plantain","Water plantain",7,10,7,7,0
+"385","Hottonia","Proximal_cover_Water violet_[%]","Water violet","Water violet",7,11,7,5,0
+"386","Hottonia","Proximal_height_Water violet_[cm]","Water violet","Water violet",7,11,7,5,0
+"387","Hottonia","Central_cover_Water violet_[%]","Water violet","Water violet",7,11,7,5,0
+"388","Hottonia","Central_height_Water violet_[cm]","Water violet","Water violet",7,11,7,5,0
+"389","Hottonia","Distal_cover_Water violet_[%]","Water violet","Water violet",7,11,7,5,0
+"390","Hottonia","Distal_height_Water violet_[cm]","Water violet","Water violet",7,11,7,5,0
+"391","Epilobium sp.","Proximal_cover_Willow herb_[%]","Willow herb","Willow herb",6,7,5,5,0
+"392","Epilobium sp.","Proximal_height_Willow herb_[cm]","Willow herb","Willow herb",6,7,5,5,0
+"393","Epilobium sp.","Central_cover_Willow herb_[%]","Willow herb","Willow herb",6,7,5,5,0
+"394","Epilobium sp.","Central_height_Willow herb_[cm]","Willow herb","Willow herb",6,7,5,5,0
+"395","Epilobium sp.","Distal_cover_Willow herb_[%]","Willow herb","Willow herb",6,7,5,5,0
+"396","Epilobium sp.","Distal_height_Willow herb_[cm]","Willow herb","Willow herb",6,7,5,5,0
+"397","Epilobium hirsutum","Proximal_cover_Great willow herb_[%]","Great willow herb","Great willow herb",7,8,7,7,0
+"398","Epilobium hirsutum","Proximal_height_Great willow herb_[cm]","Great willow herb","Great willow herb",7,8,7,7,0
+"399","Epilobium hirsutum","Central_cover_Great willow herb_[%]","Great willow herb","Great willow herb",7,8,7,7,0
+"400","Epilobium hirsutum","Central_height_Great willow herb_[cm]","Great willow herb","Great willow herb",7,8,7,7,0
+"401","Epilobium hirsutum","Distal_cover_Great willow herb_[%]","Great willow herb","Great willow herb",7,8,7,7,0
+"402","Epilobium hirsutum","Distal_height_Great willow herb_[cm]","Great willow herb","Great willow herb",7,8,7,7,0
+"403","Solanum dulcamara","Proximal_cover_Woody night shade_[%]","Woody night shade","Woody night shade",7,8,7,7,0
+"404","Solanum dulcamara","Proximal_height_Woody night shade_[cm]","Woody night shade","Woody night shade",7,8,7,7,0
+"405","Solanum dulcamara","Central_cover_Woody night shade_[%]","Woody night shade","Woody night shade",7,8,7,7,0
+"406","Solanum dulcamara","Central_height_Woody night shade_[cm]","Woody night shade","Woody night shade",7,8,7,7,0
+"407","Solanum dulcamara","Distal_cover_Woody night shade_[%]","Woody night shade","Woody night shade",7,8,7,7,0
+"408","Solanum dulcamara","Distal_height_Woody night shade_[cm]","Woody night shade","Woody night shade",7,8,7,7,0
+"409","Artemisia","Proximal_cover_Wormwood_[%]","Wormwood","Wormwood",7,4,7,9,0
+"410","Artemisia","Proximal_height_Wormwood_[cm]","Wormwood","Wormwood",7,4,7,9,0
+"411","Artemisia","Central_cover_Wormwood_[%]","Wormwood","Wormwood",7,4,7,9,0
+"412","Artemisia","Central_height_Wormwood_[cm]","Wormwood","Wormwood",7,4,7,9,0
+"413","Artemisia","Distal_cover_Wormwood_[%]","Wormwood","Wormwood",7,4,7,9,0
+"414","Artemisia","Distal_height_Wormwood_[cm]","Wormwood","Wormwood",7,4,7,9,0
+"415","Persicaria","Proximal_cover_Redleg_[%]","Redleg","Redleg",7,6,6,7,0
+"416","Persicaria","Proximal_height_Redleg_[cm]","Redleg","Redleg",7,6,6,7,0
+"417","Persicaria","Central_cover_Redleg_[%]","Redleg","Redleg",7,6,6,7,0
+"418","Persicaria","Central_height_Redleg_[cm]","Redleg","Redleg",7,6,6,7,0
+"419","Persicaria","Distal_cover_Redleg_[%]","Redleg","Redleg",7,6,6,7,0
+"420","Persicaria","Distal_height_Redleg_[cm]","Redleg","Redleg",7,6,6,7,0
+"421",NA,"Proximal_cover_Heart - shaped floating proximal_[%]","Heart  shaped floating proximal",NA,NA,NA,NA,NA,NA
+"422",NA,"Proximal_height_Heart - shaped floating proximal_[cm]","Heart  shaped floating proximal",NA,NA,NA,NA,NA,NA
+"423",NA,"Central_cover_Heart - shaped floating_[%]","Heart  shaped floating",NA,NA,NA,NA,NA,NA
+"424",NA,"Central_height_Heart - shaped floating_[cm]","Heart  shaped floating",NA,NA,NA,NA,NA,NA
+"425",NA,"Distal_cover_Heart - shaped floating_[%]","Heart  shaped floating",NA,NA,NA,NA,NA,NA
+"426",NA,"Distal_height_Heart - shaped floating_[cm]","Heart  shaped floating",NA,NA,NA,NA,NA,NA
+"427","Veronica beccabunga","Proximal_cover_Brooklime_[%]","Brooklime","Brooklime",7,10,6,6,0
+"428","Veronica beccabunga","Proximal_height_Brooklime_[cm]","Brooklime","Brooklime",7,10,6,6,0
+"429","Veronica beccabunga","Central_cover_Brooklime_[%]","Brooklime","Brooklime",7,10,6,6,0
+"430","Veronica beccabunga","Central_height_Brooklime_[cm]","Brooklime","Brooklime",7,10,6,6,0
+"431","Veronica beccabunga","Distal_cover_Brooklime_[%]","Brooklime","Brooklime",7,10,6,6,0
+"432","Veronica beccabunga","Distal_height_Brooklime_[cm]","Brooklime","Brooklime",7,10,6,6,0
+"433","Caltha palustris","Proximal_cover_Marsh Marigold_[%]","Marsh Marigold","Marsh Marigold",7,9,6,4,0
+"434","Caltha palustris","Proximal_height_Marsh Marigold_[cm]","Marsh Marigold","Marsh Marigold",7,9,6,4,0
+"435","Caltha palustris","Central_cover_Marsh Marigold_[%]","Marsh Marigold","Marsh Marigold",7,9,6,4,0
+"436","Caltha palustris","Central_height_Marsh Marigold_[cm]","Marsh Marigold","Marsh Marigold",7,9,6,4,0
+"437","Caltha palustris","Distal_cover_Marsh Marigold_[%]","Marsh Marigold","Marsh Marigold",7,9,6,4,0
+"438","Caltha palustris","Distal_height_Marsh Marigold distal_[cm]","Marsh Marigold distal",NA,NA,NA,NA,NA,NA
+"439","Unidentified umbellifera","Proximal_cover_Unidentified umbellifera_[%]","Unidentified umbellifera","Unidentified umbellifera",NA,NA,NA,NA,NA
+"440","Unidentified umbellifera","Proximal_height_Unidentified umbellifera_[cm]","Unidentified umbellifera","Unidentified umbellifera",NA,NA,NA,NA,NA
+"441","Unidentified umbellifera","Central_cover_Unidentified umbellifera_[%]","Unidentified umbellifera","Unidentified umbellifera",NA,NA,NA,NA,NA
+"442","Unidentified umbellifera","Central_height_Unidentified umbellifera_[cm]","Unidentified umbellifera","Unidentified umbellifera",NA,NA,NA,NA,NA
+"443","Unidentified umbellifera","Distal_cover_Unidentified umbellifera_[%]","Unidentified umbellifera","Unidentified umbellifera",NA,NA,NA,NA,NA
+"444","Unidentified umbellifera","Distal_height_Unidentified umbellifera_[cm]","Unidentified umbellifera","Unidentified umbellifera",NA,NA,NA,NA,NA

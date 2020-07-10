@@ -30,7 +30,7 @@ data <- hmscdata %>% left_join(buffer, by = "plot_id")
 data <- data %>% mutate(
   dry = as.factor(dry),
   cleared = as.factor(cleared),
-  exposure = as.factor(exposure),
+  exposure = as.double(exposure),
   management = as.factor(management)
 )
 
@@ -72,7 +72,7 @@ seasonal_pa <- seasons %>%
 Y <- seasonal_pa %>% map(select, an_maculipennis:gammarus)
 
 # Covariates
-covariates <- seasonal_pa %>% map(select, width:suburban)
+covariates <- seasonal_pa %>% map(select, width:suburban, -eastings, -northings)
 
 XFormula <-
   as.formula(paste("~" , paste(colnames(covariates[[1]]), collapse = "+")))
