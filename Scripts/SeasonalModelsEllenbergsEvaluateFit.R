@@ -24,9 +24,9 @@ library(Hmsc)
 
 ## ---------------------------
 
-assign('Spring', get(load("Models/Seasonal_Models/Spring.RData")))
-assign('Summer', get(load("Models/Seasonal_Models/Summer.RData")))
-assign('Autumn', get(load("Models/Seasonal_Models/Autumn.RData")))
+assign('Spring', get(load("Models/Seasonal_Models_Ellenbergs/Spring.RData")))
+assign('Summer', get(load("Models/Seasonal_Models_Ellenbergs/Summer.RData")))
+assign('Autumn', get(load("Models/Seasonal_Models_Ellenbergs/Autumn.RData")))
 
 model_list = list(Spring = Spring,
                   Summer = Summer,
@@ -49,7 +49,7 @@ for (i in 1:3) {
 }
 
 
-save(MF, MFCV, file = "Models/Seasonal_Models/PredictExplanPower.RData")
+save(MF, MFCV, file = "Models/Seasonal_Models_Ellenbergs/PredictExplanPower.RData")
 
 # AUC ---------------------------------------------------------------------
 
