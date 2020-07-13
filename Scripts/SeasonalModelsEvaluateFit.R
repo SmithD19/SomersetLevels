@@ -34,7 +34,7 @@ model_list = list(Spring = Spring,
 
 # -------------------------------------------------------------------------
 
-partition = lapply(model_list, function(x) createPartition(x, nfolds = 10, column = "site"))
+partition = lapply(model_list, function(x) createPartition(x, nfolds = 5, column = "site"))
 
 MF = list()
 MFCV = list()

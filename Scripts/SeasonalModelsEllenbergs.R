@@ -79,7 +79,7 @@ seasonal_pa <- seasons %>%
 Y <- seasonal_pa %>% map(select, an_maculipennis:gammarus)
 
 # Covariates
-covariates <- seasonal_pa %>% map(select, width:suburban, -eastings, -northings)
+covariates <- seasonal_pa %>% map(select, width:suburban, -eastings, -northings, starts_with("cw"))
 
 XFormula <-
   as.formula(paste("~" , paste(colnames(covariates[[1]]), collapse = "+")))
@@ -157,7 +157,7 @@ names(models) <- c("Spring", "Summer", "Autumn")
 ifelse(!dir.exists(file.path("Models", "Seasonal_Models_Ellenbergs")), dir.create(file.path("Models", "Seasonal_Models_Ellenbergs")), FALSE)
 
 # Test run or not?
-test.run = F
+test.run = T
 
 nChains = 4
 
