@@ -86,7 +86,7 @@ for (i in seq_along(model_list)) {
   
   plotCustomBeta(post = post, model = model_list[[i]]) %>% 
     ggcorrplot(legend.title = "Correlation",
-               title = paste("Beta Correlation 95%", names(model_list)[[i]]), tl.cex = 15, type = "lower") +
+               title = paste("Beta Correlation 95%", names(model_list)[[i]]), tl.cex = 15, type = "full") +
     xlab("Covariates") +
     ylab("Species")
   
