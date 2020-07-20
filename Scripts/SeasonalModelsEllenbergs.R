@@ -38,7 +38,11 @@ data <- data %>% mutate(
   dry = as.factor(dry),
   cleared = as.factor(cleared),
   exposure = as.double(exposure),
-  management = as.factor(management)
+  management = as.factor(management),
+  # cw_light = as.factor(cw_light),
+  # cw_p_h = as.factor(cw_p_h),
+  # cw_moisture = as.factor(cw_moisture),
+  # cw_nitrogen = as.factor(cw_nitrogen)
 )
 
 # Split data into seasonal groups
@@ -79,7 +83,8 @@ seasonal_pa <- seasons %>%
 Y <- seasonal_pa %>% map(select, an_maculipennis:gammarus)
 
 # Covariates
-covariates <- seasonal_pa %>% map(select, width:suburban, -eastings, -northings, starts_with("cw"))
+covariates <- seasonal_pa %>% map(select, width:suburban, -eastings, -northings, starts_with("cw"),
+                                  -exposure, -cleared)
 
 XFormula <-
   as.formula(paste("~" , paste(colnames(covariates[[1]]), collapse = "+")))
@@ -87,6 +92,12 @@ XFormula <-
 X <-
   lapply(covariates, function(x)
     model.matrix(XFormula, data = x))
+
+# Contrasts for ordinal in future?
+# contrasts.arg = list(cw_light = "contr.poly",
+#                      cw_nitrogen = "contr.poly",
+#                      cw_p_h = "contr.poly",
+#                      cw_moisture = "contr.poly"))
 
 # Geographical co-ordinates for each site
 xy <-
