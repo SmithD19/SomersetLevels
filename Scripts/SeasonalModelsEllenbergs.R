@@ -24,8 +24,8 @@ library(janitor)
 
 hmscdata <- read_rds("Data/hmscdata.rds")
 buffer <- read_csv("Data/buffer1km.csv")
-ellenbergs <- read_csv("Data/CoverWeightedEllenbergs.csv") %>% 
-  mutate_at(.vars = vars(Plot_ID, Year, Season), ~ as.factor(.)) %>% 
+ellenbergs <- read_csv("Data/CoverWeightedEllenbergs2.csv") %>% 
+  mutate_at(.vars = vars(Site, Year, Season), ~ as.factor(.)) %>% 
   clean_names()
 
 # Aggregate data together into one dataframe
