@@ -144,7 +144,7 @@ XSelect.joint = list()
 
 for (i in 1:3) {
   # Prior probability for covariate to be included
-  qq = 0.1
+  qq = 0.7
   
   # ns = number of species
   ns = ncol(Y[[i]])

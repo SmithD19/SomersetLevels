@@ -1,6 +1,0 @@
-"Spring" "Summer" "Autumn"
-"an_maculipennis" 1 0.895316804407714 0.955932203389831
-"an_claviger" 0.997058823529412 1 0.96875
-"cx_pipiens" 1 1 1
-"cs_annulata" 0.976190476190476 1 1
-"oc_caspius" NA NA 1
