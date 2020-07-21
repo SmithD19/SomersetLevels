@@ -208,7 +208,7 @@ if (test.run) {
   verbose = 5
 } else {
   # with this option mcmc runs slow for analysis
-  thin = 100
+  thin = 500
   samples = 1000
   adaptNf = rep(ceiling(0.4 * samples * thin), 1)
   transient = ceiling(0.5 * samples * thin)
