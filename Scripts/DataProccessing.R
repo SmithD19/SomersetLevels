@@ -35,6 +35,15 @@ structural <-
   colnames()
 
 
+# -------------------------------------------------------------------------
+wchem <- data %>% 
+  select(water_temperature_c, 
+         flow_speed_m_s, 
+         dissolved_oxygen, 
+         turbidity, 
+         salinity) %>% 
+  colnames()
+
 ## ------------------------------------------------------------------------------------------------------------------
 study <- data %>% select(site, plot, plot_id, season, year, dip_point) %>% colnames()
 
@@ -59,7 +68,7 @@ clean <- data %>%
   mutate_at(.vars = vars(mosquitoes, predators), as.integer) %>% 
   # Structural variables are numeric
   mutate_at(.vars = vars(structural), parse_number) # parse_number() selects the first number in a string then discards the rest
-  # Site and seasonal variables should be factoral
+  # Site and seasonal variables should be factorial
 
 
 ## ------------------------------------------------------------------------------------------------------------------
