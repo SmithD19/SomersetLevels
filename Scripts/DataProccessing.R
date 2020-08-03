@@ -8,10 +8,11 @@ library(janitor)
 dip <- read_xlsx("Data/RawDipData.xlsx", na = c("NA", "nd"))
 cov <- read_xlsx("Data/RawCovariateData.xlsx", na = c("NA", "nd"))
 ellen <- read_csv("Data/KnownEllenbergValues2.csv")
-
+vegdat <- read_csv("Data/FunctionalVeg.csv")
 
 ## ------------------------------------------------------------------------------------------------------------------
-data <- left_join(dip, cov) %>% clean_names() %>% remove_empty("cols")
+data <- left_join(dip, cov) %>% clean_names() %>%
+  left_join(vegdat) %>% remove_empty("cols")
 
 
 ## ------------------------------------------------------------------------------------------------------------------
@@ -43,6 +44,9 @@ wchem <- data %>%
          turbidity, 
          salinity) %>% 
   colnames()
+
+# -------------------------------------------------------------------------
+veg <- data %>% select(total_cover, cover_emergent, cover_surface, cover_vertical)
 
 ## ------------------------------------------------------------------------------------------------------------------
 study <- data %>% select(site, plot, plot_id, season, year, dip_point) %>% colnames()
@@ -238,8 +242,11 @@ dfstudy <- clean %>%
 
 
 ## ------------------------------------------------------------------------------------------------------------------
-df <- bind_cols(dfstudy, dfabundance, dfstruc)
+df <- bind_cols(dfstudy, dfabundance, dfstruc, veg)
 
+# save these as a dip point level analysis
+write_csv(df, "Data/DipPointLevelData.csv")
+write_rds(df, "Data/DipPointLevelData.rds")
 
 ## ------------------------------------------------------------------------------------------------------------------
 agg1 <- df %>% 
