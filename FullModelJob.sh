@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # the job name and output file
-#SBATCH --job-name=FullModel #(default is the script name)
+#SBATCH --job-name=SeasonalFull #(default is the script name)
 
 #these are all the default values anyway 
 #SBATCH --ntasks=1 
@@ -16,4 +16,4 @@
 #SBATCH --mail-user=d.smith34178@gmail.com
 
 # Execute
-Rscript Scripts/FullModel.R
+Rscript Scripts/SeasonalFull.R
