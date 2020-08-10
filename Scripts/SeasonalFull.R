@@ -164,7 +164,7 @@ names(models) <- c("Spring", "Summer", "Autumn")
 ifelse(!dir.exists(file.path("Models", "Seasonal_Full")), dir.create(file.path("Models", "Seasonal_Full")), FALSE)
 
 # Test run or not?
-test.run = T
+test.run = F
 
 nChains = 4
 
