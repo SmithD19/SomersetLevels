@@ -33,13 +33,13 @@ library(RColorBrewer)
 ## ---------------------------
 
 assign('Spring', get(load(
-  "Models/Seasonal_Models_Ellenbergs/Spring.RData"
+  "Models/Seasonal_Full/Spring.RData"
 )))
 assign('Summer', get(load(
-  "Models/Seasonal_Models_Ellenbergs/Summer.RData"
+  "Models/Seasonal_Full/Summer.RData"
 )))
 assign('Autumn', get(load(
-  "Models/Seasonal_Models_Ellenbergs/Autumn.RData"
+  "Models/Seasonal_Full/Autumn.RData"
 )))
 
 model_list = list(Spring = Spring,
@@ -73,11 +73,12 @@ for (i in seq_along(model_list)) {
   
   cormat[[i]] <-
     plotCustomBeta(post, model = model_list[[i]], 0) %>%
-    select(1:5) %>% 
+    select(1:4) %>% 
     rownames_to_column() %>% 
     pivot_longer(-rowname)
   
 }
+
 
 names(cormat) <- names(model_list)
 
@@ -90,6 +91,7 @@ outline.color = "gray"
 legend.title = "Corr"
 tl.cex = 12
 tl.srt = 45
+pch = 4
 
 corplot$Season_F <- factor(corplot$Season, levels=c("Spring", "Summer", "Autumn"))
 
@@ -135,11 +137,11 @@ supportLevel = 0.7
 
 # These are the rhyne level residual correlations
 toplotrhyne <-
-  ((OmegaCor[[2]]$support > supportLevel) +
-     (OmegaCor[[2]]$support < (1 - supportLevel)) > 0) * OmegaCor[[2]]$mean
+  ((OmegaCor[[1]]$support > supportLevel) +
+     (OmegaCor[[1]]$support < (1 - supportLevel)) > 0) * OmegaCor[[1]]$mean
 
-rhynemat[[i]] <- OmegaCor[[2]]$mean
-rhynepmat[[i]] <- OmegaCor[[2]]$support
+rhynemat[[i]] <- OmegaCor[[1]]$mean
+rhynepmat[[i]] <- OmegaCor[[1]]$support
 
 }
 
@@ -148,14 +150,14 @@ names(rhynepmat) <- names(model_list)
 
 rhynemat <- rhynemat %>% 
   map(as.data.frame) %>%
-  map(select, 1:5) %>% 
+  map(select, 1:4) %>% 
   map(rownames_to_column) %>% 
   map(pivot_longer, -rowname) %>% 
   bind_rows(.id = "Season")
 
 rhynepmat <- rhynepmat %>% 
   map(as.data.frame) %>% 
-  map(select, 1:5) %>% 
+  map(select, 1:4) %>% 
   map(rownames_to_column) %>% 
   map(pivot_longer, -rowname) %>% 
   bind_rows(.id = "Season")
