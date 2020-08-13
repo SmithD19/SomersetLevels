@@ -64,6 +64,10 @@ Y <- seasonal_pa %>% map(select, an_maculipennis:gammarus) %>%
   # as data frame
   map(as.data.frame)
 
+# Change all 0 values to NA
+# Model the abundance conditonal on presence AKA hurdle model
+Y <- lapply(Y, function(e) replace(e, e == 0, NA))
+
 ##################################################
 
 Xcovariates <-
