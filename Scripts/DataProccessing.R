@@ -11,8 +11,8 @@ ellen <- read_csv("Data/KnownEllenbergValues2.csv")
 vegdat <- read_csv("Data/FunctionalVeg.csv")
 
 ## ------------------------------------------------------------------------------------------------------------------
-data <- left_join(dip, cov) %>% clean_names() %>%
-  left_join(vegdat) %>% remove_empty("cols")
+data <- right_join(dip, cov) %>% clean_names() %>%
+  inner_join(vegdat)
 
 
 ## ------------------------------------------------------------------------------------------------------------------
@@ -268,7 +268,8 @@ agg3 <- df %>%
     .funs = function(x) names(table(x))[which.max(table(x))]
   ) %>% ungroup()
 
-hmscdata <- left_join(agg1, agg2) %>% left_join(agg3) %>% left_join(plot_id_xy)
+hmscdata <- left_join(agg1, agg2) %>% left_join(agg3) %>% left_join(plot_id_xy) %>% select(-plot)
+
 
 write_csv(hmscdata, "Data/hmscdata.csv")
 write_rds(hmscdata, "Data/hmscdata.rds")

@@ -15,18 +15,20 @@ library(Hmsc)
 ##################################################
 ## Data:
 
-rawdata <- read_rds("Data/hmscdata.rds") %>% na.omit() %>%
-  # THIS IS IMPORTANT - Need to drop levels not used after omitting NA
-  # Factors are never fun :-(
-  droplevels()
-
+rawdata <- read_rds("Data/hmscdata.rds")
 
 ## Drop covariates we dont want:
+
 data <- rawdata %>%
   # drop fish, frogs & newts, as well as the two infrequent mosquito species
   select(-fish, -newt, -cs_morsitans, -oc_cantans, -oc_caspius, -frog) %>%
   # drop the unused structural levels
-  select(-dry, -cleared, -exposure)
+  select(-dry, -cleared, -exposure) %>%
+  # THIS IS IMPORTANT - Need to drop levels not used after omitting NA
+  na.omit() %>%
+  # Factors are never fun :-(
+  droplevels()
+
 
 ##################################################
 ## Split into seasonal data
@@ -44,7 +46,7 @@ to_remove3 <- setdiff(columns[[2]], columns[[3]])
 
 to_remove <- c(to_remove1, to_remove2, to_remove3) %>% unique()
 
-seasonal_pa <- seasonal_data %>%
+seasonal <- seasonal_data %>%
   bind_rows() %>%
   # Remove variables not consistent across all seasons
   select(-to_remove) %>%
@@ -60,13 +62,27 @@ seasonal_pa <- seasonal_data %>%
 
 ##################################################
 
-Y <- seasonal_pa %>% map(select, an_maculipennis:gammarus) %>%
+Y <- seasonal %>% map(select, an_maculipennis:gammarus) %>%
   # as data frame
   map(as.data.frame)
 
 # Change all 0 values to NA
-# Model the abundance conditonal on presence AKA hurdle model
+# Model the abundance conditional on presence AKA hurdle model
 Y <- lapply(Y, function(e) replace(e, e == 0, NA))
+
+# Change Y matrix to ones and zeroes for easy counting
+Yt <- lapply(Y, function(e) replace(e, e == 0, NA)) %>% 
+  lapply(function(e) replace(e, e > 0, 1))
+
+# This is how many sites that the models actually have occurance data
+tabled <- Yt %>% sapply(colSums, na.rm = T)
+
+stop(print("There isnt enough data or abundance values to do this stratified by season!"))
+
+vec <- tabled %>% rowSums()
+
+# Which columns have less than 10 instances of occurrence overall?
+removeme <- names(vec[vec < 10])
 
 ##################################################
 

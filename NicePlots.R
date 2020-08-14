@@ -124,7 +124,7 @@ p <- corplot %>%
 
 p1 <- p + theme(plot.caption = element_text(hjust = 0.5))
 
-ggsave("CorrelativeCov.png", plot = p1, width = 8.3, height = 11.7 ,dpi = 320)
+ggsave("Models/Seasonal_Full/CorrelativeCov.png", plot = p1, width = 8.3, height = 11.7 ,dpi = 320)
 
 # -------------------------------------------------------------------------
 rhynemat = list()
@@ -191,7 +191,7 @@ p2 <- ggplot(data = rhynemat, aes(x = rowname, y = name, fill = value)) +
     Only correlative values above 70% are plotted and significant values (p < 0.05) are marked with an X"
   )
 
-ggsave("CorrelativeSpecies.png", plot = p2, width = 8.3, height = 11.7 ,dpi = 320)
+ggsave("Models/Seasonal_Full/CorrelativeSpecies.png", plot = p2, width = 8.3, height = 11.7 ,dpi = 320)
 
 
 

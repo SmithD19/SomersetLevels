@@ -36,20 +36,20 @@ library(ggridges)
 
 ## ---------------------------
 
-assign('Spring', get(load("Models/ReducedCov/Spring.RData")))
-assign('Summer', get(load("Models/ReducedCov/Summer.RData")))
-assign('Autumn', get(load("Models/ReducedCov/Autumn.RData")))
+assign('Spring', get(load("Models/Seasonal_Abundance/Spring.RData")))
+assign('Summer', get(load("Models/Seasonal_Abundance/Summer.RData")))
+assign('Autumn', get(load("Models/Seasonal_Abundance/Autumn.RData")))
 
 model_list = list(Spring = Spring, Summer = Summer, Autumn = Autumn)
 
 
 # Directory Creating for storing plots - If doesn't exist then create it in the current root
-ifelse(!dir.exists(file.path("Models", "ReducedCov_Plots")), dir.create(file.path("Models", "ReducedCov_Plots")), FALSE)
+ifelse(!dir.exists(file.path("Models", "Seasonal_Abundance_Plots")), dir.create(file.path("Models", "Seasonal_Abundance_Plots")), FALSE)
 
 
 for (i in seq_along(model_list)) {
   plotdirectory <-
-    file.path("Models", "ReducedCov_Plots", names(model_list)[[i]])
+    file.path("Models", "Seasonal_Abundance_Plots", names(model_list)[[i]])
   
   # Create directory to store plots if isn't present
   if (!dir.exists(file.path(plotdirectory))) {
@@ -302,7 +302,7 @@ bind_uneven <- function(x = list) {
 }
 
 # Directory to store comparative plots
-comparisondir <- file.path("Models", "ReducedCov_Plots")
+comparisondir <- file.path("Models", "Seasonal_Abundance_Plots")
 
 # Effective samples comparison - Beta
 effective_samples_Beta <- lapply(model_list, function(x) {
