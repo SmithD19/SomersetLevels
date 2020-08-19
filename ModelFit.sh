@@ -9,11 +9,11 @@
 #SBATCH --threads-per-core=1 
 
 # time limit and memory allocation 
-#SBATCH --time=48:00:00 
-#SBATCH --mem=1G 
+#SBATCH --time=10-00:00:00 
+#SBATCH --mem=4G 
 
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=d.smith34178@gmail.com
 
 # Execute
-Rscript Scripts/SeasonalAbundance.R
+Rscript Scripts/ModelFit.R
