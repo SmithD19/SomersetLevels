@@ -26,7 +26,7 @@ abundance <- output
 load("Models/PA_Final/Model.RData")
 pa <- output
 ## List
-model_list <- list(abu = abundace, pa = pa)
+model_list <- list(abu = abundance, pa = pa)
 
 ## Species ~ Covariates ----------------------------------------------------
 
