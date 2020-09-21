@@ -40,3 +40,6 @@ vignettes/*.pdf
 
 # Model outputs
 Models/
+
+# Archived Files
+Archive/
