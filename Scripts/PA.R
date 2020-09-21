@@ -132,7 +132,7 @@ model <- Hmsc(
 ## Params:
 
 # Test run or not?
-test.run = T
+test.run = F
 
 nChains = 4
 
