@@ -20,13 +20,16 @@ library(RColorBrewer)
 library(ggridges)
 
 ## Assign
-load("Models/Abundance_Final/Model.RData")
-abundance <- output
+load("Models/Abundance/Model.RData")
+abu <- output
 ## Assign
-load("Models/PA_Final/Model.RData")
+load("Models/AbundanceHurdle/Model.RData")
+abuhur <- output
+## Assign
+load("Models/PA/Model.RData")
 pa <- output
 ## List
-model_list <- list(abu = abundance, pa = pa)
+model_list <- list(abu = abu, abuhur = abuhur, pa = pa)
 
 ## Species ~ Covariates ----------------------------------------------------
 
@@ -45,7 +48,7 @@ for (i in seq_along(model_list)) {
     supportLevel = sl
     ## Matrix to plot
     toPlot = 2 * betaP - 1
-    toPlot = toPlot * ((betaP > supportLevel) + (betaP < (1 - supportLevel)) > 0.7)
+    toPlot = toPlot * ((betaP > supportLevel) + (betaP < (1 - supportLevel)) > 0.95)
     ## Store as tibble/df
     toPlot <- as.data.frame(toPlot)
     ## Give rownames
@@ -114,7 +117,7 @@ rhynepmat = list()
 for (i in seq_along(model_list)) {
   
   OmegaCor <- computeAssociations(model_list[[i]])
-  supportLevel = 0.7
+  supportLevel = 0.95
   
   ## These are the rhyne level residual correlations
   toplotrhyne <-

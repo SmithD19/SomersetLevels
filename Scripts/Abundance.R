@@ -145,7 +145,7 @@ if (test.run) {
 } else {
   # with this option MCMC runs slow for analysis
   thin = 100
-  samples = 1000
+  samples = 2500
   adaptNf = rep(ceiling(0.4 * samples * thin), 1)
   transient = ceiling(0.5 * samples * thin)
   verbose = 500 * thin
@@ -179,5 +179,5 @@ filepath = file.path("Models", "Abundance")
 
 ifelse(!dir.exists(filepath), dir.create(filepath), FALSE)
 
-save.image(paste0(filepath, "/Model.RData"))
+save.image(paste0(filepath, "/Model-250000.RData"))
 
