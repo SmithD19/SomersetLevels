@@ -20,7 +20,7 @@ library(RColorBrewer)
 library(ggridges)
 
 ## Assign
-load("Models/Abundance/Model.RData")
+load("Models/Abundance/Model-250000.RData")
 abu <- output
 ## Assign
 load("Models/AbundanceHurdle/Model.RData")
@@ -117,7 +117,7 @@ rhynepmat = list()
 for (i in seq_along(model_list)) {
   
   OmegaCor <- computeAssociations(model_list[[i]])
-  supportLevel = 0.95
+  supportLevel = 0.75
   
   ## These are the rhyne level residual correlations
   toplotrhyne <-
@@ -150,6 +150,7 @@ p.mat <- rhynepmat %>% mutate(value = ifelse(abs(value) > 0.95, value, 0))
 
 p2 <- ggplot(data = rhynemat, aes(x = rowname, y = name, fill = value)) +
   geom_tile(color = outline.color) + 
+  geom_text(aes(label = round(value, digits = 2))) +
   geom_point(data = p.mat, mapping = aes(x = rowname, y = name), shape = ifelse(p.mat$value == 0, 26, pch), size = 5) +
   scale_fill_gradient2(low = colors[1], 
                        high = colors[3], 
@@ -169,7 +170,7 @@ p2 <- ggplot(data = rhynemat, aes(x = rowname, y = name, fill = value)) +
     caption = "Residual correlative interactions at the rhyne level between mosquito and predator species by model type. 
     Only correlative values above 70% are plotted and significant values (p < 0.05) are marked with an X"
   )
-
+p2
 
 # Comparative plotting ----------------------------------------------------
 
