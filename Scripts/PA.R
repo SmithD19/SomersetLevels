@@ -68,7 +68,7 @@ X <- model.matrix(XFormula, data = Xcovariates)
 
 # Use XData? For gradient contruction?
 XData <- Xcovariates %>% as.data.frame()
-rownames(XData) <- data$plot_id
+#rownames(XData) <- data$plot_id
 
 ##################################################
 ## Study Design
