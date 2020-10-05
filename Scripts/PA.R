@@ -66,6 +66,10 @@ XFormula <- as.formula(paste("~", paste(colnames(Xcovariates), collapse = "+")))
 # The covariates in model.matrix format
 X <- model.matrix(XFormula, data = Xcovariates)
 
+# Use XData? For gradient contruction?
+XData <- Xcovariates %>% as.data.frame()
+rownames(XData) <- data$plot_id
+
 ##################################################
 ## Study Design
 
@@ -119,7 +123,7 @@ model <- Hmsc(
   # A formula object for linear regression
   XFormula = XFormula,
   # A matrix of measured covariates
-  X = X,
+  XData = XData,
   # Distribution
   distr = "probit",
   # Study Design

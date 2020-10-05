@@ -17,7 +17,7 @@ library(readxl)
 library(janitor)
 
 dip <-
-  read_xlsx("Data/Copy_RawDipData.xlsx", na = c("NA", "nd", "na"))
+  read_xlsx("Data/RawDipData.xlsx", na = c("NA", "nd", "na"))
 cov <-
   read_xlsx("Data/RawCovariateData.xlsx", na = c("NA", "nd", "na"))
 
@@ -140,6 +140,7 @@ water_wrangle <- raw_data %>%
   group_by(across(nodip_group)) %>%
   # Summarise = mean the values
   summarise(across(water_cols, mean, na.rm = T)) %>% 
+  # One wof the Water Temp values is far too high (79Deg)
   clean_names()
 
 # PLant Cover Variables ---------------------------------------------------
@@ -265,8 +266,8 @@ glimpse(data)
 ###  for our models to play with. This equates to roughly 70 rows with missing
 ###  data
 
-library(naniar)
-vis_miss(data)
+# library(naniar)
+# vis_miss(data)
 
 # Reformatting names of data ----------------------------------------------
 
