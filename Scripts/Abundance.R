@@ -35,7 +35,7 @@ Y <- data %>% select(an_maculipennis:gammarus) %>%
   # drop fish and newts, as well as the two infrequent mosquito species
   select(-fish, -newt, -cs_morsitans, -oc_cantans, -oc_caspius) %>% 
   # presence/absence
-  mutate_all(~ pa_mutate(.)) %>% 
+  # mutate_all(~ log(. + 1)) %>% 
   as.data.frame()
 
 # Change all 0 values to NA
@@ -125,7 +125,7 @@ model <- Hmsc(
   # A matrix of measured covariates
   XData = XData,
   # Distribution
-  distr = "lognormal poisson",
+  distr = "poisson",
   # Study Design
   studyDesign = StudyDesign,
   # Random Levels
@@ -138,7 +138,7 @@ model <- Hmsc(
 # Test run or not?
 test.run = F
 
-nChains = 4
+nChains = 8
 
 if (test.run) {
   # with this option MCMC runs fast for checking
@@ -149,7 +149,7 @@ if (test.run) {
 } else {
   # with this option MCMC runs slow for analysis
   thin = 100
-  samples = 2500
+  samples = 1000
   adaptNf = rep(ceiling(0.4 * samples * thin), 1)
   transient = ceiling(0.5 * samples * thin)
   verbose = 500 * thin
@@ -183,5 +183,5 @@ filepath = file.path("Models", "Abundance")
 
 ifelse(!dir.exists(filepath), dir.create(filepath), FALSE)
 
-save.image(paste0(filepath, "/Model-250000.RData"))
+save.image(paste0(filepath, "/Model.RData"))
 

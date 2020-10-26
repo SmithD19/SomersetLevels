@@ -84,7 +84,7 @@ tl.cex = 12
 tl.srt = 45
 pch = 4
 
-corplotpmat <- corplot %>% mutate(value = ifelse(abs(value) > 0.95, value, 0))
+corplotpmat <- corplot %>% mutate(value = ifelse(abs(value) > 0.9, value, 0))
 
 ## ggplot
 p <- corplot %>% 
@@ -124,7 +124,7 @@ rhynepmat = list()
 for (i in seq_along(model_list)) {
   
   OmegaCor <- computeAssociations(model_list[[i]])
-  supportLevel = 0.7
+  supportLevel = 0.9
   
   ## These are the rhyne level residual correlations
   toplotrhyne <-
@@ -153,12 +153,12 @@ rhynepmat <- rhynepmat %>%
   map(pivot_longer, -rowname) %>% 
   bind_rows(.id = "Model")
 
-p.mat <- rhynepmat %>% mutate(value = ifelse(abs(value) > 0.95, value, 0))
+p.mat <- rhynepmat %>% mutate(value = ifelse(abs(value) > 0.9, value, 0))
 
 p2 <- ggplot(data = rhynemat, aes(x = rowname, y = name, fill = value)) +
   geom_tile(color = outline.color) + 
-  # geom_point(data = p.mat, mapping = aes(x = rowname, y = name), shape = ifelse(p.mat$value == 0, 26, pch), size = 5) +
-  geom_text(aes(label = round(value, digits = 2)), size = 3) +
+  geom_point(data = p.mat, mapping = aes(x = rowname, y = name), shape = ifelse(p.mat$value == 0, 26, pch), size = 5) +
+  # geom_text(aes(label = round(value, digits = 2)), size = 3) +
   scale_fill_gradient2(low = colors[1], 
                        high = colors[3], 
                        mid = colors[2], 
@@ -176,7 +176,7 @@ p2 <- ggplot(data = rhynemat, aes(x = rowname, y = name, fill = value)) +
 
 p2
 
-#ggsave("Plots/SppCorrelationValues.png", p2)
+ggsave("Plots/SppCorrelationValues.png", p2)
 
 library(ggraph)
 
@@ -374,6 +374,7 @@ PresenceAbsence <- R.utils::loadToEnv("Models/PA/Model.RData")[["output"]]
 
 # List
 model_list <- list(AbundanceShort = AbundanceShort, AbundanceLong = AbundanceLong, AbundanceHurdle = AbundanceHurdle, PresenceAbsence = PresenceAbsence)
+model_list <- list(Abundance = AbundanceLong, PresenceAbsence = PresenceAbsence)
 
 # VP
 vp <- lapply(model_list, computeVariancePartitioning)
@@ -386,7 +387,7 @@ vpdf <- lapply(vp, vp2df) %>%
 
 # Plot
 
-vpdf %>% 
+vp <- vpdf %>% 
   ggplot(aes(x = name, y = value, fill = fixeff)) +
   geom_col() +
   xlab("Species") +
@@ -394,14 +395,14 @@ vpdf %>%
   labs(fill = "Effects") +
   scale_fill_brewer(palette ="Paired") +
   facet_wrap(~ Model, ncol = 1) +
-  theme_Publication() +
+  #theme_Publication() +
   theme(axis.text.x = element_text(angle = tl.srt,
                                    vjust = 1, 
                                    size = tl.cex, hjust = 1), 
         axis.text.y = ggplot2::element_text(size = tl.cex))
 
 
-ggsave("Plots/VariancePartition.png", dpi = 300)
+ggsave(plot = vp, "Plots/VariancePartition.png", dpi = 300, width = 7, height = 5)
 
 
 
