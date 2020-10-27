@@ -22,7 +22,7 @@ library(Hmsc)
 # load("Models/PA/Model.RData")
 # assign('pa', get("output"))
 
-model_list = list(abu = abu,
+model_list = list(abu = abu)
   #abuhur = abuhur)
 #pa = pa)
 
