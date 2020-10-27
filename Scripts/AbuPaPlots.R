@@ -31,9 +31,13 @@ abuhur <- output
 ## Assign
 load("Models/PA/Model.RData")
 pa <- output
+## Assign
+load("Models/AbundancePoisson/Model.RData")
+abupoi <- output
+
 ## List
 # model_list <- list(AbundanceShort = abundance, AbundanceLong = abu25000, AbundanceHurdle = abuhur, PresenceAbsence = pa)
-model_list <- list(Abundance = abu25000, PresenceAbsence = pa)
+model_list <- list(Abundance = abundance, PresenceAbsence = pa, AbuPoisson = abupoi)
 
 ## Species ~ Covariates ----------------------------------------------------
 
@@ -114,7 +118,7 @@ p1 <- p + theme(plot.caption = element_text(hjust = 0.5))
 
 p1
 
-ggsave("Plots/CovCorrelationValues.png", p1)
+#ggsave("Plots/CovCorrelationValues.png", p1)
 
 ## Species Residiual Covariance --------------------------------------------
 
@@ -176,7 +180,7 @@ p2 <- ggplot(data = rhynemat, aes(x = rowname, y = name, fill = value)) +
 
 p2
 
-ggsave("Plots/SppCorrelationValues.png", p2)
+#ggsave("Plots/SppCorrelationValues.png", p2)
 
 library(ggraph)
 
@@ -349,7 +353,7 @@ CVPlot <- ExplanPred %>%
     col = NULL
   )
 
-ggsave(CVPlot, filename = "Plots/CV-AUC-PA.png", dpi = 300, device = "png")
+#ggsave(CVPlot, filename = "Plots/CV-AUC-PA.png", dpi = 300, device = "png")
 
 
 
@@ -402,7 +406,7 @@ vp <- vpdf %>%
         axis.text.y = ggplot2::element_text(size = tl.cex))
 
 
-ggsave(plot = vp, "Plots/VariancePartition.png", dpi = 300, width = 7, height = 5)
+#ggsave(plot = vp, "Plots/VariancePartition.png", dpi = 300, width = 7, height = 5)
 
 
 

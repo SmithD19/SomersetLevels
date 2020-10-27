@@ -21,6 +21,11 @@ library(corrplot)
 load("Models/PA/Model.RData")
 pa <- output
 
+load("Models/AbundancePoisson/Model.RData")
+abupoi <- output
+
+load("Models/Abundance/Model.RData")
+abu <- output
 
 # Species x Species -------------------------------------------------------
 
