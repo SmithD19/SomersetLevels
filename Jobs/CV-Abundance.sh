@@ -16,4 +16,4 @@
 #SBATCH --mail-user=d.smith34178@gmail.com
 
 # Execute
-Rscript Scripts/CV-HurdleAbu.R
+Rscript Scripts/CV-Abundance.R
