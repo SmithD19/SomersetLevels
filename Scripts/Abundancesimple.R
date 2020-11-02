@@ -62,7 +62,7 @@ Xcovariates <- data %>% select(cover, water_temp, width)
 
 # This is the model formula
 # XFormula <- as.formula(paste("~", paste(colnames(Xcovariates), collapse = "+")))
-XFormula <- as.formula(~ cover + width + water_temperature + poly(Xcovariates$water_temp, degree = 2,raw = TRUE))
+XFormula <- as.formula(~ cover + width + water_temp + poly(Xcovariates$water_temp, degree = 2,raw = TRUE))
 
 # The covariates in model.matrix format
 X <- model.matrix(XFormula, data = Xcovariates)
