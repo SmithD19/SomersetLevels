@@ -30,6 +30,10 @@ Code
  - Make sure to run the DataProcessing.R script first to generate the data if working from a scratch repo
  - Model scripts are named appropriately
  - Cross-Validation scripts beign with CV
+ 
+Models (These are not on the GitHub repo because of size 50Mb+ each model)
+ - Here are the all the model files (fitted outputs) as .RData files
+ - You can email me for any of these files instead of waiting days to run them if you like
 
 Plots
  - Contain all the plots
