@@ -132,6 +132,8 @@ model <- Hmsc(
   ranLevels = rl
 )
 
+saveRDS(object = model, file = "Models/UnfittedModels/PA.rds")
+
 ##################################################
 ## Params:
 
