@@ -18,14 +18,9 @@
 library(Hmsc)
 library(corrplot)
 
-load("Models/PA/Model.RData")
+load("Models/PA_Thin300/ModelExtended.RData")
 pa <- output
 
-load("Models/AbundancePoisson/Model.RData")
-abupoi <- output
-
-load("Models/Abundance/Model.RData")
-abu <- output
 
 # Species x Species -------------------------------------------------------
 
@@ -45,7 +40,7 @@ tiff(
 corrplot(toplotrhyne, method = "circle", tl.col = "black")
 dev.off()
 
-tiff(
+png(
   filename = "Plots/ResidualCorrelation_0.9.png",
   units = "in",
   width = 5,
