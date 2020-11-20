@@ -9,7 +9,7 @@ library(writexl)
 load("Models/PA_Thin300/ModelExtended.RData")
 pa <- output
 
-load("Models/Abundance_Thin300/Model.RData")
+load("Models/Abundance_Thin300/ModelExtended.RData")
 abu <- output
 
 models = list(PresenceAbsence = pa, Abundance = abu)
@@ -83,7 +83,7 @@ for (i in seq_along(models)) {
   
   mycols = rainbow(nrow(VP$vals)) 
   
-  par.default <- c(5, 4, 4, 2) + 0.1
+  mar.default <- c(5, 4, 4, 2) + 0.1
   par(mar = mar.default + c(4, 0, 0, 0))
   
   custom_VP(
