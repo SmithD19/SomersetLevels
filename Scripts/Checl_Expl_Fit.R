@@ -1,3 +1,17 @@
+## ---------------------------
+##
+## Script name: Check Model Fit
+##
+## Purpose of script:
+##
+## Author: Daniel Smith
+##
+## Date Created: 2020-11-24
+##
+## Email: dansmi@ceh.ac.uk
+##
+## ---------------------------
+
 library(coda)
 library(Hmsc)
 
@@ -44,45 +58,46 @@ nice_load <- function(file, object, rename = NULL){
 abu <- nice_load("Models/Abundance_Thin300/ModelExtended.RData", "output")
 pa <- nice_load("Models/PA_Thin300//ModelExtended.RData", "output")
 
-# List --------------------------------------------------------------------
+# Check Model Fit ---------------------------------------------------------
 
-models <- list(abu = abu, pa = pa)
+## Explanatory Power
 
-filename <- file.path("Panels/PSRF_") 
-
+MF = list()
 
 for (i in seq_along(models)) {
-  
-  mod <- models[[i]]
-  
-  mpost <- convertToCodaObject(mod)
-  
-  pdf(paste0(filename, names(models[i]), ".pdf"))
-  
-  par(mfrow = c(3, 2))
-  
-  ess.beta = effectiveSize(mpost$Beta)
-  psrf.beta = gelman.diag(mpost$Beta, multivariate = FALSE)$psrf
-  hist(ess.beta)
-  hist(psrf.beta)
-  ess.gamma = effectiveSize(mpost$Gamma)
-  psrf.gamma = gelman.diag(mpost$Gamma, multivariate = FALSE)$psrf
-  hist(ess.gamma)
-  hist(psrf.gamma)
-  sppairs = matrix(sample(x = 1:output$ns ^ 2, size = 100))
-  tmp = mpost$Omega[[1]]
-  for (chain in 1:length(tmp)) {
-    tmp[[chain]] = tmp[[chain]][, sppairs]
-  }
-  ess.omega = effectiveSize(tmp)
-  psrf.omega = gelman.diag(tmp, multivariate = FALSE)$psrf
-  hist(ess.omega)
-  hist(psrf.omega)
-  
-  par(mfrow = c(1, 1))
-  
-  dev.off()
-  
+  # Explanatory Power - Not Cross Validated
+  preds = computePredictedValues(models[[i]])
+  MF[[i]] = evaluateModelFit(hM = models[[i]], predY = preds)  
 }
+
+names(MF) = names(models)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
