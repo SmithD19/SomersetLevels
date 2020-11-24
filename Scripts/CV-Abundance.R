@@ -13,7 +13,7 @@ library(tidyverse)
 library(Hmsc)
 
 ## ---------------------------
- load("Models/Abundance/Model.RData")
+ load("Models/Abundance_Thin300/ModelExtended.RData")
  assign('abu', get("output"))
 
 # load("Models/AbundanceHurdle/Model.RData")
@@ -28,7 +28,7 @@ model_list = list(abu = abu)
 
 # -------------------------------------------------------------------------
 
-partition = lapply(model_list, function(x) createPartition(x, nfolds = 5, column = "plot_id"))
+partition = lapply(model_list, function(x) createPartition(x, nfolds = 3, column = "plot_id"))
 
 MF = list()
 MFCV = list()
@@ -38,10 +38,10 @@ for (i in seq_along(model_list)) {
   preds = computePredictedValues(model_list[[i]])
   MF[[i]] = evaluateModelFit(hM = model_list[[i]], predY = preds)  
   # Predictive Power - Cross Validated
-  preds = computePredictedValues(model_list[[i]], partition = partition[[i]], nParallel = 4)
+  preds = computePredictedValues(model_list[[i]], partition = partition[[i]], nParallel = 8)
   MFCV[[i]] = evaluateModelFit(hM = model_list[[i]], predY = preds)
 }
 
 
 
-save.image(file = "Models/CV-Abu.RData")
+save.image(file = "Models/CV-AbundanceExtended.RData")

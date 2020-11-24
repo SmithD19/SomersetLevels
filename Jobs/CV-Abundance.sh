@@ -9,8 +9,8 @@
 #SBATCH --threads-per-core=1
 
 # time limit and memory allocation 
-#SBATCH --time=10-00:00:00 
-#SBATCH --mem=4G 
+#SBATCH --time=30-00:00:00 
+#SBATCH --mem=12G 
 
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=d.smith34178@gmail.com

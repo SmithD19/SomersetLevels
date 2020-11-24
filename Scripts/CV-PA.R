@@ -13,13 +13,8 @@ library(tidyverse)
 library(Hmsc)
 
 ## ---------------------------
-load("Models/Abundance/Model.RData")
-assign('abu', get("output"))
 
-load("Models/AbundanceHurdle/Model.RData")
-assign('abuhur', get("output"))
-
-load("Models/PA/Model.RData")
+load("Models/PA_Thin300/ModelExtended.RData")
 assign('pa', get("output"))
 
 model_list = list(#abu = abu,
@@ -28,7 +23,7 @@ model_list = list(#abu = abu,
 
 # -------------------------------------------------------------------------
 
-partition = lapply(model_list, function(x) createPartition(x, nfolds = 5, column = "plot_id"))
+partition = lapply(model_list, function(x) createPartition(x, nfolds = 3, column = "plot_id"))
 
 MF = list()
 MFCV = list()
@@ -38,38 +33,38 @@ for (i in seq_along(model_list)) {
   preds = computePredictedValues(model_list[[i]])
   MF[[i]] = evaluateModelFit(hM = model_list[[i]], predY = preds)  
   # Predictive Power - Cross Validated
-  preds = computePredictedValues(model_list[[i]], partition = partition[[i]], nParallel = 4)
+  preds = computePredictedValues(model_list[[i]], partition = partition[[i]], nParallel = 8)
   MFCV[[i]] = evaluateModelFit(hM = model_list[[i]], predY = preds)
 }
 
 
 
-save.image(file = "Models/CV-PA.RData")
+save.image(file = "Models/CV-PaExtended.RData")
 
 # AUC ---------------------------------------------------------------------
 
 # AUC value of 0.5 indicates as good as just chance. 1 indicates perfect discrimination of presence between sites
 
-# Explanatory power
-explanAUC <- MF %>% map_depth(.depth = 1, pluck, "AUC")
-names(explanAUC) <- names(model_list)
-explanAUC %>% map(mean, na.rm = T)
-
-# Predictive power
-predictAUC <- MFCV %>% map_depth(.depth = 0, pluck, "AUC")
-names(predictAUC) <- names(model_list)
-predictAUC %>% map(mean, na.rm = T)
-
-# For each individual mosquito
-# Explanatory
-eAUCframe <- explanAUC %>% bind_rows() %>% as.data.frame()
-rownames(eAUCframe) <- colnames(model_list$Spring$Y)
-eAUCframe[1:5, ] %>% t()
-
-# Predictive
-pAUCframe <- predictAUC %>% bind_rows() %>% as.data.frame()
-rownames(pAUCframe) <- colnames(model_list$Spring$Y)
-pAUCframe[1:5, ] %>% t()
+# # Explanatory power
+# explanAUC <- MF %>% map_depth(.depth = 1, pluck, "AUC")
+# names(explanAUC) <- names(model_list)
+# explanAUC %>% map(mean, na.rm = T)
+# 
+# # Predictive power
+# predictAUC <- MFCV %>% map_depth(.depth = 0, pluck, "AUC")
+# names(predictAUC) <- names(model_list)
+# predictAUC %>% map(mean, na.rm = T)
+# 
+# # For each individual mosquito
+# # Explanatory
+# eAUCframe <- explanAUC %>% bind_rows() %>% as.data.frame()
+# rownames(eAUCframe) <- colnames(model_list$Spring$Y)
+# eAUCframe[1:5, ] %>% t()
+# 
+# # Predictive
+# pAUCframe <- predictAUC %>% bind_rows() %>% as.data.frame()
+# rownames(pAUCframe) <- colnames(model_list$Spring$Y)
+# pAUCframe[1:5, ] %>% t()
 
 # We are losing predictive power in summer for a lot of species
 # Must make a graph denoting explantory vs predictive power
