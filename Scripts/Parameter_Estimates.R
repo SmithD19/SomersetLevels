@@ -105,8 +105,8 @@ for (i in seq_along(models)) {
     vals = rbind(vals, TjurR2)
     R2 = TjurR2
   }
-  if (!is.null(MF$R2)) {
-    R2 = MF$R2
+  if (!is.null(MF$SR2)) {
+    R2 = MF$SR2
     vals = rbind(vals, R2)
   }
   

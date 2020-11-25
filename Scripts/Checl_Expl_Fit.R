@@ -60,6 +60,8 @@ pa <- nice_load("Models/PA_Thin300//ModelExtended.RData", "output")
 
 # Check Model Fit ---------------------------------------------------------
 
+models <- list(abu = abu, pa = pa)
+
 ## Explanatory Power
 
 MF = list()
@@ -72,6 +74,7 @@ for (i in seq_along(models)) {
 
 names(MF) = names(models)
 
+MF
 
 
 
