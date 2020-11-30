@@ -23,7 +23,7 @@ model_list = list(#abu = abu,
 
 # -------------------------------------------------------------------------
 
-partition = lapply(model_list, function(x) createPartition(x, nfolds = 3, column = "plot_id"))
+partition = lapply(model_list, function(x) createPartition(x, nfolds = 5, column = "plot_id"))
 
 MF = list()
 MFCV = list()
@@ -38,6 +38,8 @@ for (i in seq_along(model_list)) {
 }
 
 
+# Keep only the CV outputs
+rm(list=setdiff(ls(), c("MF", "MFCV")))
 
 save.image(file = "Models/CV-PaExtended.RData")
 

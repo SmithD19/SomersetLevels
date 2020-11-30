@@ -1,11 +1,14 @@
 # CrossValidation Results -------------------------------------------------
+library(tidyverse)
 
 # These are the cross validation results for the Presence Absence modeling
-MFCV <- R.utils::loadToEnv("Models/CV-HurdleAbu.RData")[["MFCV"]]
-MF <- R.utils::loadToEnv("Models/CV-HurdleAbu.RData")[["MF"]]
+MFCV <- R.utils::loadToEnv("Models/CV-PaExtended.RData")[["MFCV"]]
+MF <- R.utils::loadToEnv("Models/CV-PaExtended.RData")[["MF"]]
+
+load("Models/PA_Thin300/ModelExtended.RData")
 
 # Species names
-sppname <- abuhur$Y %>% colnames()
+sppname <- output$Y %>% colnames()
 
 ExplanPred <- data.frame(
   ## AUC
@@ -37,4 +40,4 @@ CVPlot <- ExplanPred %>%
     col = NULL
   )
 
-ggsave(CVPlot, filename = "Plots/CV-AUC-PA.png", dpi = 300, device = "png")
+ggsave(CVPlot, filename = "Plots/CV-AUC-PaExtended.png", dpi = 300, device = "png")
