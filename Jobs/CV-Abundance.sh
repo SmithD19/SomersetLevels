@@ -10,7 +10,7 @@
 
 # time limit and memory allocation 
 #SBATCH --time=30-00:00:00 
-#SBATCH --mem=12G 
+#SBATCH --mem=16G 
 
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=d.smith34178@gmail.com
