@@ -2,8 +2,7 @@
 library(tidyverse)
 
 # These are the cross validation results for the Presence Absence modeling
-MFCV <- R.utils::loadToEnv("Models/CV-PaExtended.RData")[["MFCV"]]
-MF <- R.utils::loadToEnv("Models/CV-PaExtended.RData")[["MF"]]
+load("Models/CV-PaExtended.RData")
 
 load("Models/PA_Thin300/ModelExtended.RData")
 
