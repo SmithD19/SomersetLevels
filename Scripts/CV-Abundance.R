@@ -35,10 +35,10 @@ MFCV = list()
 
 for (i in seq_along(model_list)) {
   # Explanatory Power - Not Cross Validated
-  preds = computePredictedValues(model_list[[i]])
+  preds = computePredictedValues(model_list[[i]], expected = FALSE)
   MF[[i]] = evaluateModelFit(hM = model_list[[i]], predY = preds)  
   # Predictive Power - Cross Validated
-  preds = computePredictedValues(model_list[[i]], partition = partition[[i]], nParallel = 8)
+  preds = computePredictedValues(model_list[[i]], partition = partition[[i]], nParallel = 8, expected = FALSE)
   MFCV[[i]] = evaluateModelFit(hM = model_list[[i]], predY = preds)
 }
 

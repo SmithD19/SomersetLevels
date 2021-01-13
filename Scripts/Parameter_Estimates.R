@@ -21,7 +21,7 @@ nm = length(models)
 # Mon Nov 09 16:44:27 2020 ------------------------------
 # Changed to 90% intervals just to see.
 
-filename = paste("Panels/parameter_estimates_85.pdf")
+filename = paste("Panels/parameter_estimates_80.pdf")
 
 # -------------------------------------------------------------------------
 
@@ -212,7 +212,7 @@ for (j in 1:nm) {
     plotGamma(
       m,
       post = postGamma,
-      supportLevel = 0.9,
+      supportLevel = 0.900,
       param = "Sign",
       covNamesNumbers = c(TRUE, FALSE),
       trNamesNumbers = c(m$nt < 21, FALSE),
