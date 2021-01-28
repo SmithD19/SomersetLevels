@@ -21,11 +21,31 @@ library(corrplot)
 load("Models/PA_Thin300/ModelExtended.RData")
 pa <- output
 
+Tax_Names <- c(
+  "An. maculipennis",
+  "An. claviger",
+  "Cx. pipiens",
+  "Cs. annulata",
+  "Corixidae",
+  "Coleoptera larvae",
+  "Coleoptera",
+  "Zygoptera larvae",
+  "Anisoptera larvae",
+  "Ilyocoris",
+  "Nepa cinerea",
+  "Gammaridae"
+)
+
+colnames(pa$Y) <- Tax_Names
+
+
+pa$spNames <- Tax_Names
+
 
 # Species x Species -------------------------------------------------------
 
 OmegaCor <- computeAssociations(pa)
-supportLevel = 0.90
+supportLevel = 0.9
 
 toplotrhyne <-
   ((OmegaCor[[1]]$support > supportLevel) + (OmegaCor[[1]]$support < (1 - supportLevel)) > 0) * OmegaCor[[1]]$mean

@@ -21,7 +21,7 @@ nm = length(models)
 # Mon Nov 09 16:44:27 2020 ------------------------------
 # Changed to 90% intervals just to see.
 
-filename = paste("Panels/parameter_estimates_80.pdf")
+filename = paste("Panels/parameter_estimates_90.pdf")
 
 # -------------------------------------------------------------------------
 
@@ -57,7 +57,115 @@ custom_VP <- function (hM, VP, cols = NULL, mainTitle, ...)
 }
 
 
+# Edit the names of the species in models to get better plots -------------
+
+Tax_Names <- c(
+  "An. maculipennis",
+  "An. claviger",
+  "Cx. pipiens",
+  "Cs. annulata",
+  "Corixidae",
+  "Coleoptera larvae",
+  "Coleoptera",
+  "Zygoptera larvae",
+  "Anisoptera larvae",
+  "Ilyocoris",
+  "Nepa cinerea",
+  "Gammaridae"
+)
+
+colnames(models$PresenceAbsence$Y) <- Tax_Names
+colnames(models$Abundance$Y) <- Tax_Names
+
+models$PresenceAbsence$spNames <- Tax_Names
+models$Abundance$spNames <- Tax_Names
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 pdf(file = filename)
+
+for (i in seq_along(models)) {
+  
+  models[[i]][["covNames"]] = c(
+    "Intercept",
+    "Cover",
+    "Shaded",
+    "Manage",
+    "Width",
+    "Temp",
+    #"Turbidity",
+    #"Salinity",
+    "Oxygen",
+    "pH"
+  )
+  
+  
+  m = models[[i]]
+  
+  group = c(1, 1, 1, 1, 1, 2, 2, 2)
+  
+  groupnames = c("Structural", "Physiochemical")
+  
+  VP = computeVariancePartitioning(m, group = group, groupnames = groupnames)
+  
+  vals = VP$vals
+  
+  mycols = rainbow(nrow(VP$vals)) 
+  
+  mar.default <- c(5, 4, 4, 2) + 0.1
+  par(mar = mar.default + c(4, 0, 0, 0))
+  
+  custom_VP(
+    hM = m,
+    VP = VP,
+    cols = mycols,
+    args.leg = list(bg = "white", cex = 0.7),
+    cex.main = 0.8,
+    las = 2, 
+    mainTitle = paste0("Grouped variance partition, ",modelnames[[i]])
+  )
+  
+  preds = computePredictedValues(m)
+  MF = evaluateModelFit(hM = m, predY = preds)
+  
+  R2 = NULL
+  if (!is.null(MF$TjurR2)) {
+    TjurR2 = MF$TjurR2
+    vals = rbind(vals, TjurR2)
+    R2 = TjurR2
+  }
+  if (!is.null(MF$SR2)) {
+    R2 = MF$SR2
+    vals = rbind(vals, R2)
+  }
+  
+  filename =  paste0("Panels/grouped_parameter_estimates_VP_", modelnames[[i]], ".csv")
+  write.csv(vals, file = filename)
+  
+  if (!is.null(R2)) {
+    VPr = VP
+    for (k in 1:m$ns) {
+      VPr$vals[, k] = R2[k] * VPr$vals[, k]
+    }
+    
+    VPr$vals = VPr$vals[, order(-R2)]
+    
+    mar.default <- c(5, 4, 4, 2) + 0.1
+    par(mar = mar.default + c(4, 0, 0, 0))
+    
+    custom_VP(
+      hM = m,
+      VP = VPr,
+      cols = mycols,
+      args.leg = list(bg = "white", cex = 0.7),
+      ylim = c(0, 1),
+      cex.main = 0.8,
+      las = 2,
+      mainTitle = paste0("Grouped raw variance partition ",modelnames[[i]])
+    )
+  }
+}
 
 for (i in seq_along(models)) {
   
@@ -136,7 +244,6 @@ for (i in seq_along(models)) {
     )
   }
 }
-
 for (j in 1:nm) {
   m = models[[j]]
   

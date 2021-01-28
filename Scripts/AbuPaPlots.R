@@ -19,25 +19,18 @@ library(tidygraph)
 library(RColorBrewer)
 library(ggridges)
 
+
 ## Assign
-load("Models/Abundance/Model-250000.RData")
-abu25000 <- output
-## Assign
-load("Models/Abundance/Model.RData")
+load("Models/Abundance_Thin300/ModelExtended.RData")
 abundance <- output
 ## Assign
-load("Models/AbundanceHurdle/Model.RData")
-abuhur <- output
-## Assign
-load("Models/PA/Model.RData")
+load("Models/PA_Thin300/ModelExtended.RData")
 pa <- output
-## Assign
-load("Models/AbundancePoisson/Model.RData")
-abupoi <- output
+
 
 ## List
 # model_list <- list(AbundanceShort = abundance, AbundanceLong = abu25000, AbundanceHurdle = abuhur, PresenceAbsence = pa)
-model_list <- list(Abundance = abundance, PresenceAbsence = pa, AbuPoisson = abupoi)
+model_list <- list(Abundance = abundance, PresenceAbsence = pa)
 
 ## Species ~ Covariates ----------------------------------------------------
 
@@ -317,8 +310,8 @@ ggsave(
 # CrossValidation Results -------------------------------------------------
 
 # These are the cross validation results for the Presence Absence modeling
-MFCV <- R.utils::loadToEnv("Models/CV-PA.RData")[["MFCV"]]
-MF <- R.utils::loadToEnv("Models/CV-PA.RData")[["MF"]]
+MFCV <- R.utils::loadToEnv("Models/CV-PaExtended.RData")[["MFCV"]]
+MF <- R.utils::loadToEnv("Models/CV-PaExtended.RData")[["MF"]]
 
 # Species names
 sppname <- model_list$PresenceAbsence$Y %>% colnames()
